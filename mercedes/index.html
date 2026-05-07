@@ -947,46 +947,14 @@
   </div>
 </div>
 
-<script>
-(function() {
-  var modal = document.getElementById('booking-modal');
-  var closeBtn = document.getElementById('modal-close');
-  var lastFocus;
-
-  function openModal() {
-    lastFocus = document.activeElement;
-    modal.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
-    closeBtn.focus();
-  }
-
-  function closeModal() {
-    modal.style.display = 'none';
-    document.body.style.overflow = '';
-    if (lastFocus) lastFocus.focus();
-  }
-
-  closeBtn.addEventListener('click', closeModal);
-
-  modal.addEventListener('click', function(e) {
-    if (e.target === modal) closeModal();
-  });
-
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
-  });
-
-  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(trigger) {
-    trigger.addEventListener('click', function(e) {
-      e.preventDefault();
-      openModal();
-    });
-  });
-})();
-</script>
+<script src="/assets/js/modal.js"></script>
 
 <script>
 (function() {
+  var SUPABASE_URL      = 'https://prqbvbhuwfpdkkrkqizj.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBycWJ2Ymh1d2ZwZGtrcmtxaXpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5OTA1MzQsImV4cCI6MjA5MjU2NjUzNH0.Io5IHsyp23yThoyZD7Ccs4UygTtwx_0rIRTlnS3pYZQ';
+  var sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
   var dateInput = document.getElementById('m-ns-preferred_date');
   var hintDate  = document.getElementById('m-ns-hint-date');
 
