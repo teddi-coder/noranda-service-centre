@@ -807,24 +807,48 @@
   var iframe  = document.querySelector('#booking-modal iframe');
   var tracked = false;
 
-  // postMessage listener: resize + fire generate_lead on any non-height Podium message
+  function fireConversions() {
+    if (tracked) return;
+    tracked = true;
+
+    // GA4 via GTM dataLayer
+    if (typeof dataLayer !== 'undefined') {
+      dataLayer.push({ event: 'generate_lead', form_type: 'podium' });
+    }
+
+    // WhatConverts — synthetic form so it captures visitor session/UTM data
+    try {
+      var wcForm = document.createElement('form');
+      wcForm.method = 'post';
+      wcForm.action = window.location.href;
+      var src = document.createElement('input');
+      src.type  = 'hidden';
+      src.name  = 'lead_source';
+      src.value = 'Podium Booking Form';
+      wcForm.appendChild(src);
+      document.body.appendChild(wcForm);
+      if (typeof window.wc_capture_form === 'function') {
+        window.wc_capture_form(wcForm);
+      }
+      document.body.removeChild(wcForm);
+    } catch (e) {
+      console.warn('[WhatConverts] capture failed:', e);
+    }
+  }
+
+  // postMessage: resize iframe height OR detect submission signal
   window.addEventListener('message', function(e) {
     if (e.origin !== 'https://forms.podium.com') return;
     if (e.data && e.data.height && iframe) {
       iframe.style.minHeight = e.data.height + 'px';
       return;
     }
-    // Any other message from Podium (e.g. form submission confirmation)
-    if (!tracked) {
-      tracked = true;
-      console.log('[Podium] postMessage received:', JSON.stringify(e.data));
-      if (typeof dataLayer !== 'undefined') {
-        dataLayer.push({ event: 'generate_lead', form_type: 'podium' });
-      }
-    }
+    // Any non-height message from Podium = likely a submission event
+    console.log('[Podium] postMessage:', JSON.stringify(e.data));
+    fireConversions();
   });
 
-  // Click tracking: fires when user opens the booking modal
+  // CTA click: fires when modal opens (intent signal)
   document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(el) {
     el.addEventListener('click', function() {
       if (typeof dataLayer !== 'undefined') {
