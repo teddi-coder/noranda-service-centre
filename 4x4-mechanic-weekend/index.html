@@ -579,7 +579,7 @@
         });
       }
 
-      window.location.href = 'https://mechanicsnoranda.com.au/booking-confirmed/';
+      window.location.href = '/thank-you/';
     });
   });
 })();
@@ -622,211 +622,21 @@
       <button id="modal-close" aria-label="Close booking form"
         style="background:rgba(0,0,0,0.25);border:none;color:#fff;font-size:1.2rem;width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--font-main);">&#x2715;</button>
     </div>
-    <div style="padding:24px;">
-      <div class="ns-booking-form">
-
-        <form id="booking-form-modal">
-          <div class="ns-body">
-
-            <div class="ns-section">Your details</div>
-            <div class="ns-grid2">
-              <div class="ns-field">
-                <label for="m-ns-customer_name">Full name <span class="req">*</span></label>
-                <input type="text" name="customer_name" id="m-ns-customer_name" placeholder="e.g. Sarah Smith" required />
-              </div>
-              <div class="ns-field">
-                <label for="m-ns-customer_phone">Phone <span class="req">*</span></label>
-                <input type="tel" name="customer_phone" id="m-ns-customer_phone" placeholder="04xx xxx xxx" required />
-              </div>
-            </div>
-            <div class="ns-full">
-              <div class="ns-field">
-                <label for="m-ns-customer_email">Email <span class="req">*</span></label>
-                <input type="email" name="customer_email" id="m-ns-customer_email" placeholder="your@email.com" required />
-              </div>
-            </div>
-
-            <div class="ns-section">Vehicle details</div>
-            <div class="ns-full">
-              <div class="ns-field">
-                <label for="m-ns-registration">Registration <span class="req">*</span></label>
-                <input type="text" name="registration" id="m-ns-registration" placeholder="e.g. 1ABC123" required style="text-transform: uppercase;" />
-              </div>
-            </div>
-
-            <div class="ns-section">Service required</div>
-            <div class="ns-full" style="margin-bottom:12px">
-              <div class="ns-field">
-                <label for="m-ns-service_type">Service type <span class="req">*</span></label>
-                <select name="service_type" id="m-ns-service_type" required>
-                  <option value="" disabled selected>&#8212; Select a service &#8212;</option>
-                  <option>Logbook Service</option>
-                  <option>Roadworthy / Safety Inspection</option>
-                  <option>Brakes</option>
-                  <option>Steering &amp; Suspension</option>
-                  <option>Exhaust Repairs &amp; Replacement</option>
-                  <option>Air Conditioning</option>
-                  <option>Clutch &amp; Transmission</option>
-                  <option>Engine Repairs</option>
-                  <option>Cooling System</option>
-                  <option>Auto Electrical</option>
-                  <option>Tyres</option>
-                  <option>Windscreen</option>
-                  <option>Other</option>
-                </select>
-              </div>
-            </div>
-            <div class="ns-full">
-              <div class="ns-field">
-                <label for="m-ns-notes">Notes / description</label>
-                <textarea name="notes" id="m-ns-notes" placeholder="Describe the issue or anything we should know..."></textarea>
-              </div>
-            </div>
-
-            <div class="ns-section">Preferred booking time</div>
-            <div class="ns-grid2">
-              <div class="ns-field">
-                <label for="m-ns-preferred_date">Preferred date <span class="req">*</span></label>
-                <input type="date" name="preferred_date" id="m-ns-preferred_date" required />
-                <p class="ns-hint" id="m-ns-hint-date"></p>
-              </div>
-              <div class="ns-field">
-                <label for="m-ns-preferred_time">Preferred time <span class="req">*</span></label>
-                <select name="preferred_time" id="m-ns-preferred_time" required>
-                  <option value="" disabled selected>&#8212; Select &#8212;</option>
-                  <option>Morning (8am&ndash;12pm)</option>
-                  <option>Afternoon (12pm&ndash;4:30pm)</option>
-                  <option>Either</option>
-                </select>
-              </div>
-            </div>
-            <div class="ns-note">
-              Preferred times are a request only &mdash; we&rsquo;ll confirm your actual slot by phone or email within 1 business day.
-            </div>
-
-            <button type="submit" class="ns-submit" id="m-ns-enfold-submit">Submit Booking Request &rarr;</button>
-            <p class="ns-disclaimer">By submitting you agree to be contacted regarding your booking request.</p>
-            <p class="ns-error" id="m-ns-enfold-error">Something went wrong. Please call us on <strong>08 9376 1155</strong> or try again.</p>
-
-          </div>
-        </form>
-
-      </div>
-      <p style="color:#666;font-size:0.85rem;text-align:center;margin-top:16px;">We'll call you back within 2 business hours</p>
-    </div>
+    <iframe src="https://forms.podium.com/noranda-service-centre-23-cobbler-pl-mirrabooka"
+      style="width:100%;min-height:680px;border:none;display:block;"
+      title="Book a Service — Noranda Service Centre"
+      loading="lazy"></iframe>
   </div>
 </div>
 <script src="/assets/js/modal.js"></script>
 <script>
 (function() {
-  var SUPABASE_URL      = 'https://prqbvbhuwfpdkkrkqizj.supabase.co';
-  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBycWJ2Ymh1d2ZwZGtrcmtxaXpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5OTA1MzQsImV4cCI6MjA5MjU2NjUzNH0.Io5IHsyp23yThoyZD7Ccs4UygTtwx_0rIRTlnS3pYZQ';
-  var sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-
-  var dateInput = document.getElementById('m-ns-preferred_date');
-  var hintDate  = document.getElementById('m-ns-hint-date');
-
-  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
-
-  function getLocalDateString() {
-    var now = new Date();
-    return now.getFullYear() + '-' +
-      String(now.getMonth() + 1).padStart(2, '0') + '-' +
-      String(now.getDate()).padStart(2, '0');
-  }
-
-  function updateHints() {
-    var dateVal = dateInput ? dateInput.value : '';
-    if (hintDate) hintDate.textContent = '';
-    if (!dateVal) return;
-    var parts    = dateVal.split('-');
-    var selected = new Date(parts[0], parts[1] - 1, parts[2]);
-    var dow      = selected.getDay();
-    if (dow === 0 || dow === 6) {
-      if (hintDate) hintDate.textContent = "We're closed on weekends \u2014 we'll contact you to arrange a suitable date.";
-      return;
+  var iframe = document.querySelector('#booking-modal iframe');
+  window.addEventListener('message', function(e) {
+    if (e.origin !== 'https://forms.podium.com') return;
+    if (e.data && e.data.height && iframe) {
+      iframe.style.minHeight = e.data.height + 'px';
     }
-    if (dateVal === getLocalDateString()) {
-      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability \u2014 call us on 08 9376 1155 to confirm we can fit you in today.";
-    }
-  }
-
-  if (dateInput) dateInput.addEventListener('change', updateHints);
-
-  var form      = document.getElementById('booking-form-modal');
-  var submitBtn = document.getElementById('m-ns-enfold-submit');
-  var errorMsg  = document.getElementById('m-ns-enfold-error');
-
-  var requiredFields = ['m-ns-customer_name', 'm-ns-customer_email', 'm-ns-customer_phone', 'm-ns-registration', 'm-ns-service_type', 'm-ns-preferred_date', 'm-ns-preferred_time'];
-
-  function validate() {
-    var valid = true;
-    requiredFields.forEach(function(id) {
-      var el    = document.getElementById(id);
-      var empty = !el.value.trim();
-      el.classList.toggle('invalid', empty);
-      if (empty) valid = false;
-    });
-    var emailEl = document.getElementById('m-ns-customer_email');
-    if (emailEl.value && !emailEl.value.includes('@')) {
-      emailEl.classList.add('invalid');
-      valid = false;
-    }
-    return valid;
-  }
-
-  requiredFields.forEach(function(id) {
-    document.getElementById(id).addEventListener('input', function() {
-      this.classList.remove('invalid');
-    });
-  });
-
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    if (!validate()) return;
-
-    submitBtn.disabled    = true;
-    submitBtn.textContent = 'Sending...';
-    errorMsg.style.display = 'none';
-
-    var payload = {
-      customer_name:  document.getElementById('m-ns-customer_name').value.trim(),
-      customer_email: document.getElementById('m-ns-customer_email').value.trim(),
-      customer_phone: document.getElementById('m-ns-customer_phone').value.trim(),
-      registration:   document.getElementById('m-ns-registration').value.toUpperCase(),
-      service_type:   document.getElementById('m-ns-service_type').value,
-      preferred_date: document.getElementById('m-ns-preferred_date').value,
-      preferred_time: document.getElementById('m-ns-preferred_time').value,
-      notes:          document.getElementById('m-ns-notes').value.trim() || null,
-    };
-
-    sb.from('noranda_bookings').insert([payload]).then(function(result) {
-      if (result.error) {
-        console.error(result.error);
-        errorMsg.style.display = 'block';
-        submitBtn.disabled     = false;
-        submitBtn.textContent  = 'Submit Booking Request \u2192';
-        return;
-      }
-
-      try {
-        if (typeof window.wc_capture_form === 'function') {
-          window.wc_capture_form(form);
-        } else if (typeof window.__wc !== 'undefined' && typeof window.__wc.trackFormSubmission === 'function') {
-          window.__wc.trackFormSubmission(form);
-        }
-      } catch (wcErr) {
-        console.warn('WhatConverts capture failed:', wcErr);
-      }
-
-      if (typeof gtag === 'function') {
-        gtag('event', 'generate_lead', {
-          service_type: document.getElementById('m-ns-service_type').value
-        });
-      }
-
-      window.location.href = 'https://mechanicsnoranda.com.au/booking-confirmed/';
-    });
   });
 })();
 </script>
