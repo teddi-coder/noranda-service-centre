@@ -1,2 +1,5 @@
-._*
+.wrangler/
+supabase/.temp/
+*.py
+node_modules/
 .DS_Store
