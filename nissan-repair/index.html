@@ -636,12 +636,33 @@
 <script src="/assets/js/modal.js"></script>
 <script>
 (function() {
-  var iframe = document.querySelector('#booking-modal iframe');
+  var iframe  = document.querySelector('#booking-modal iframe');
+  var tracked = false;
+
+  // postMessage listener: resize + fire generate_lead on any non-height Podium message
   window.addEventListener('message', function(e) {
     if (e.origin !== 'https://forms.podium.com') return;
     if (e.data && e.data.height && iframe) {
       iframe.style.minHeight = e.data.height + 'px';
+      return;
     }
+    // Any other message from Podium (e.g. form submission confirmation)
+    if (!tracked) {
+      tracked = true;
+      console.log('[Podium] postMessage received:', JSON.stringify(e.data));
+      if (typeof dataLayer !== 'undefined') {
+        dataLayer.push({ event: 'generate_lead', form_type: 'podium' });
+      }
+    }
+  });
+
+  // Click tracking: fires when user opens the booking modal
+  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(el) {
+    el.addEventListener('click', function() {
+      if (typeof dataLayer !== 'undefined') {
+        dataLayer.push({ event: 'podium_form_open', form_type: 'podium' });
+      }
+    });
   });
 })();
 </script>
