@@ -884,7 +884,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
   document.querySelectorAll('a[href^="#"]').forEach(function(a){
     a.addEventListener('click',function(e){
-      var target=document.querySelector(a.getAttribute('href'));
+      var href=a.getAttribute('href');
+      if(href==="#form"&&document.getElementById('booking-modal'))return;
+      var target=document.querySelector(href);
       if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'});}
     });
   });
