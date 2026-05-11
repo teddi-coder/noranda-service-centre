@@ -647,7 +647,11 @@
         });
       }
 
-      window.location.href = '../thank-you/';
+      // Notify parent page WhatConverts listener (iframe UTM attribution)
+      try {
+        window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
+      } catch (e) {}
+      setTimeout(function() { window.location.href = '../thank-you/'; }, 150);
     });
   });
 })();
@@ -910,7 +914,11 @@
         });
       }
 
-      window.location.href = '../thank-you/';
+      // Notify parent page WhatConverts listener (iframe UTM attribution)
+      try {
+        window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
+      } catch (e) {}
+      setTimeout(function() { window.location.href = '../thank-you/'; }, 150);
     });
   });
 })();

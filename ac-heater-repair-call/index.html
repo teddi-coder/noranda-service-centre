@@ -786,7 +786,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         });
       }
 
-      window.location.href = '../thank-you/';
+      // Notify parent page WhatConverts listener (iframe UTM attribution)
+      try {
+        window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
+      } catch (e) {}
+      setTimeout(function() { window.location.href = '../thank-you/'; }, 150);
     });
   });
 })();
