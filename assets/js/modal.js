@@ -17,6 +17,9 @@
     if (lastFocus) lastFocus.focus();
   }
 
+  // Expose globally so inline onclick handlers can call openBookingModal()
+  window.openBookingModal = openModal;
+
   closeBtn.addEventListener('click', closeModal);
   modal.addEventListener('click', function(e) {
     if (e.target === modal) closeModal();
@@ -25,7 +28,7 @@
     if (e.key === 'Escape' && modal.style.display === 'flex') closeModal();
   });
 
-  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(trigger) {
+  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"], a[href="#contact"].btn-estimate').forEach(function(trigger) {
     trigger.addEventListener('click', function(e) {
       e.preventDefault();
       openModal();
