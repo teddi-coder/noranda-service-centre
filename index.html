@@ -15,6 +15,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Full Vehicle Servicing &amp; Logbook Maintenance Noranda | Noranda Service Centre</title>
   <meta name="description" content="Keep your car running smoothly with expert servicing from trusted local mechanics. Logbook servicing, full vehicle checks, 4WD maintenance and brand-specific care — all warranty safe.">
+  <link rel="canonical" href="https://teddi-coder.github.io/noranda-service-centre/" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -278,10 +279,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="header-right">
       <a class="header-phone" href="tel:+61893448155">08 9344 8155</a>
       <a class="header-call-btn" href="tel:+61893448155">Call</a>
-      <a class="header-call-icon" href="tel:+61893448155" aria-label="Call us">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
-        Call
-      </a>
       <a class="header-cta" href="#form">Get Free Estimate</a>
     </div>
   </div>
@@ -590,7 +587,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="map-wrapper">
         <iframe
           title="Noranda Service Centre location"
-          src="https://maps.google.com/maps?q=2%2F3%20Cobbler%20Pl%2C%20Mirrabooka%20WA%206061%2C%20Australia&t=m&z=10&output=embed&iwloc=near"
+          src="https://maps.google.com/maps?q=2%2F3%20Cobbler%20Pl%2C%20Mirrabooka%20WA%206061%2C%20Australia&t=m&z=15&output=embed&iwloc=near"
           allowfullscreen
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
@@ -823,7 +820,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <div class="ns-hero">
     <h2>Book a Service</h2>
-    <p>Mon&ndash;Fri 8:00am&ndash;4:30pm &nbsp;&middot;&nbsp; 08 9376 1155</p>
+    <p>Mon&ndash;Fri 8:00am&ndash;4:30pm &nbsp;&middot;&nbsp; 08 9344 8155</p>
   </div>
 
   <form id="booking-form-page">
@@ -907,7 +904,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <button type="submit" class="ns-submit" id="ns-enfold-submit">Submit Booking Request &rarr;</button>
       <p class="ns-disclaimer">By submitting you agree to be contacted regarding your booking request.</p>
-      <p class="ns-error" id="ns-enfold-error">Something went wrong. Please call us on <strong>08 9376 1155</strong> or try again.</p>
+      <p class="ns-error" id="ns-enfold-error">Something went wrong. Please call us on <strong>08 9344 8155</strong> or try again.</p>
 
     </div>
   </form>
@@ -954,13 +951,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       return;
     }
     if (dateVal === getLocalDateString()) {
-      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability — call us on 08 9376 1155 to confirm we can fit you in today.";
+      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability — call us on 08 9344 8155 to confirm we can fit you in today.";
     }
   }
 
   if (dateInput) dateInput.addEventListener('change', updateHints);
 
-  var form      = document.getElementById('ns-enfold-form');
+  var form      = document.getElementById('booking-form-page');
   var submitBtn = document.getElementById('ns-enfold-submit');
   var errorMsg  = document.getElementById('ns-enfold-error');
 
@@ -1060,10 +1057,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">Do you offer fleet servicing?</button>
         <div class="faq-answer"><div class="faq-answer-inner">Yes — we provide tailored fleet maintenance for small businesses and commercial operators. We work around your schedule to minimise downtime and keep your vehicles on the road.</div></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">Do you service all makes and models?</button>
-        <div class="faq-answer"><div class="faq-answer-inner">Yes, our technicians service all major makes and models, including European and Japanese vehicles.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-question" aria-expanded="false">How long does a service take?</button>
@@ -1242,7 +1235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
             <button type="submit" class="ns-submit" id="m-ns-enfold-submit">Submit Booking Request &rarr;</button>
             <p class="ns-disclaimer">By submitting you agree to be contacted regarding your booking request.</p>
-            <p class="ns-error" id="m-ns-enfold-error">Something went wrong. Please call us on <strong>08 9376 1155</strong> or try again.</p>
+            <p class="ns-error" id="m-ns-enfold-error">Something went wrong. Please call us on <strong>08 9344 8155</strong> or try again.</p>
 
           </div>
         </form>
@@ -1283,7 +1276,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       return;
     }
     if (dateVal === getLocalDateString()) {
-      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability \u2014 call us on 08 9376 1155 to confirm we can fit you in today.";
+      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability \u2014 call us on 08 9344 8155 to confirm we can fit you in today.";
     }
   }
 
