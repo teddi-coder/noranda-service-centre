@@ -1,0 +1,8 @@
+# WordPress pages that don't have a matching new page
+/fleet/                         /general-repairs/       301
+/hello-world/                   /                       301
+
+# WordPress catch-all: query strings like /?p=123, /?page_id=456
+/?p=*                           /                       301
+/?page_id=*                     /                       301
+/?cat=*                         /                       301
