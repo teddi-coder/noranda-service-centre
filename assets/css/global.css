@@ -4,7 +4,7 @@
    ================================================================= */
 
 /* === FONTS === */
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;900&family=Barlow:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Barlow:wght@400;500&display=swap');
 
 /* === CSS VARIABLES === */
 :root {
@@ -18,7 +18,8 @@
   --offwhite:   #f5f5f3;   /* form field backgrounds */
 
   /* typography */
-  --font-head:  'Barlow Condensed', sans-serif;
+  --font-display: 'Oswald', 'Helvetica Neue', Arial, sans-serif;
+  --font-head:  'Oswald', 'Helvetica Neue', Arial, sans-serif;
   --font-body:  'Barlow', sans-serif;
 
   /* === Legacy variable aliases (backwards compat for any remaining inline styles) === */
@@ -78,7 +79,7 @@ h1, h2, h3, h4 {
 .section-label span {
   font-family: var(--font-head);
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: var(--lime);
@@ -86,7 +87,7 @@ h1, h2, h3, h4 {
 .section-heading {
   font-family: var(--font-head);
   font-size: 2.6rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 1.05;
@@ -232,7 +233,7 @@ h1, h2, h3, h4 {
 .trust-stat-num {
   font-family: var(--font-head);
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--dark);
   line-height: 1;
   text-transform: uppercase;
@@ -258,7 +259,7 @@ h1, h2, h3, h4 {
 }
 .hero-left h1 {
   font-size: 3.2rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 16px;
 }
 .hero-left h2 {
@@ -330,7 +331,7 @@ h1, h2, h3, h4 {
 }
 .service-card h3 {
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white);
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -344,14 +345,26 @@ h1, h2, h3, h4 {
 }
 .service-card a {
   font-size: 0.88rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--lime);
   font-family: var(--font-head);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 .service-card a:hover { text-decoration: underline; }
-/* Removed: .service-estimate-btn — brief says NO "Get an Estimate" on service cards */
+.service-estimate-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--lime);
+  font-family: var(--font-head);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+.service-estimate-btn:hover { text-decoration: underline; }
 
 /* === WHY CHOOSE US === */
 #why-choose { background: var(--deep); }
@@ -421,13 +434,13 @@ h1, h2, h3, h4 {
   justify-content: center;
   font-family: var(--font-head);
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 700;
   margin: 0 auto 14px;
 }
 .step-title {
   font-family: var(--font-head);
   font-size: 1.05rem;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--white);
   text-transform: uppercase;
   margin-bottom: 8px;
@@ -446,7 +459,7 @@ h1, h2, h3, h4 {
 .cta-band h2 {
   color: var(--dark);
   font-size: 2.4rem;
-  font-weight: 900;
+  font-weight: 700;
   margin-bottom: 24px;
 }
 .cta-band .cta-pair { justify-content: center; }
@@ -481,7 +494,7 @@ h1, h2, h3, h4 {
 }
 .review-author {
   font-family: var(--font-head);
-  font-weight: 700;
+  font-weight: 600;
   font-size: 0.88rem;
   color: var(--white);
   text-transform: uppercase;
@@ -522,38 +535,10 @@ h1, h2, h3, h4 {
 .carousel-prev:hover, .carousel-next:hover { background: var(--lime); color: var(--dark); }
 
 /* === SUPPLIER PILLS === */
-#partners { background: var(--dark); }
-.partners-strip {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-}
-.supplier-pill {
-  background: var(--mid);
-  border-radius: 40px;
-  padding: 10px 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.supplier-pill img {
-  height: 48px;
-  width: auto;
-  object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.7;
-  transition: opacity 0.2s;
-}
-.supplier-pill:hover img { opacity: 1; }
-.supplier-pill span, .supplier-pill:not(:has(img)) {
-  font-family: var(--font-head);
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: rgba(255,255,255,0.8);
-  letter-spacing: 0.03em;
-}
+.suppliers { background: #1a1a1a; padding: 20px 24px; border-top: 1px solid #2a2a2a; }
+.sup-label { font-family: var(--font-head); font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: #555; text-align: center; margin-bottom: 12px; }
+.sup-row { display: flex; gap: 8px; align-items: center; justify-content: center; flex-wrap: wrap; }
+.sup-pill { background: #2d2d2d; border-radius: 3px; border: 0.5px solid #333; padding: 5px 12px; font-family: var(--font-head); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: #888; }
 
 /* === VEHICLE CHIPS (fleet page) === */
 .vehicles-grid {
@@ -577,7 +562,7 @@ h1, h2, h3, h4 {
 .vehicle-chip::before {
   content: "→";
   color: var(--lime);
-  font-weight: 900;
+  font-weight: 700;
 }
 @media (max-width: 768px) { .vehicles-grid { grid-template-columns: 1fr 1fr; } }
 
@@ -811,7 +796,7 @@ h1, h2, h3, h4 {
   color: var(--lime);
   font-family: var(--font-head);
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 14px;
@@ -844,21 +829,59 @@ h1, h2, h3, h4 {
 .footer-bottom-inner a:hover { color: rgba(255,255,255,0.7); }
 
 /* === BOOKING MODAL === */
-#booking-modal {
+#booking-modal,
+.modal-overlay {
   display: none;
   position: fixed;
   inset: 0;
   z-index: 1000;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.75);
   align-items: center;
   justify-content: center;
   padding: 20px;
 }
+.modal-card {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+}
+.modal-form-heading {
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #111;
+  border-bottom: 2px solid #C8E63C;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+}
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #666;
+  background: none;
+  border: none;
+  line-height: 1;
+  padding: 0;
+}
+.modal-close-btn:hover { color: #111; }
+.modal-callback-note { color: #666; font-size: 0.85rem; text-align: center; margin-top: 16px; }
+/* legacy aliases kept for backwards compat */
 .modal-inner {
   background: var(--white);
-  border-radius: 12px;
-  max-width: 540px;
-  width: 100%;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 90%;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
@@ -867,7 +890,7 @@ h1, h2, h3, h4 {
   background: var(--dark);
   border-bottom: 3px solid var(--lime);
   padding: 20px 24px;
-  border-radius: 12px 12px 0 0;
+  border-radius: 8px 8px 0 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
