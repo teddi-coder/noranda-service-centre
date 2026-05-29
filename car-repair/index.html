@@ -12,135 +12,10 @@
   <link rel="apple-touch-icon" href="../favicon.png">
   <meta charset="UTF-8">
   <link rel="canonical" href="https://services.mechanicsnoranda.com.au/car-repair/" />
+  <link rel="stylesheet" href="../assets/css/global.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Car Repair Mirrabooka | Trusted Local Mechanics</title>
   <meta name="description" content="Trusted car repair in Mirrabooka and Noranda. Family-run mechanics serving Perth's north for over 30 years. Honest advice, fair pricing.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--nsc-red:#cc0000;--nsc-red-hover:#590000;--nsc-green:#a7cd0f;--nsc-header:#000000;--nsc-footer:#212121;--nsc-body:#666666;--nsc-heading:#000000;--nsc-bg:#ffffff;--nsc-meta:#919191;--font-main:'Poppins',sans-serif;}
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{scroll-behavior:smooth;}
-    body{font-family:var(--font-main);font-size:16px;color:var(--nsc-body);background:var(--nsc-bg);line-height:1.6;}
-    img{max-width:100%;height:auto;display:block;}
-    a{text-decoration:none;color:inherit;}
-    ul{list-style:none;}
-    .container{max-width:1140px;margin:0 auto;padding:0 20px;}
-    .section-pad{padding:64px 0;}
-    .section-pad-sm{padding:40px 0;}
-    h1,h2,h3,h4{font-family:var(--font-main);color:var(--nsc-heading);line-height:1.2;}
-    .section-heading{font-size:2rem;font-weight:700;margin-bottom:12px;}
-    .section-sub{font-size:1.05rem;color:var(--nsc-body);margin-bottom:32px;}
-    .btn{display:inline-block;padding:14px 28px;font-family:var(--font-main);font-size:1rem;font-weight:700;border-radius:4px;cursor:pointer;transition:background 0.2s ease;text-align:center;border:none;}
-    .btn-red{background:var(--nsc-red);color:#fff;}
-    .btn-red:hover{background:var(--nsc-red-hover);}
-    .btn-outline-white{background:transparent;color:#fff;border:2px solid #fff;}
-    .btn-outline-white:hover{background:rgba(255,255,255,0.12);}
-    .btn-full{width:100%;display:block;padding:14px;}
-    /* HEADER */
-    #site-header{background:var(--nsc-header);position:sticky;top:0;z-index:100;box-shadow:0 2px 8px rgba(0,0,0,0.3);}
-    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:12px 20px;max-width:1140px;margin:0 auto;gap:16px;}
-    .header-logo img{height:56px;width:auto;}
-    .header-address{color:#ccc;font-size:0.85rem;display:flex;align-items:center;gap:6px;}
-    .header-address:hover{color:#fff;}
-    .header-right{display:flex;align-items:center;gap:16px;}
-    .header-phone{color:#fff;font-size:1.05rem;font-weight:700;}
-    .header-phone:hover{color:var(--nsc-red);}
-    .header-cta{background:var(--nsc-red);color:#fff;padding:10px 20px;border-radius:50px;font-weight:700;font-size:0.9rem;white-space:nowrap;}
-    .header-cta:hover{background:var(--nsc-red-hover);}
-    .header-call-icon{display:none;align-items:center;gap:6px;color:#fff;font-weight:700;font-size:0.9rem;}
-    .header-call-icon:hover{color:var(--nsc-red);}
-    /* BREADCRUMB */
-    .breadcrumb{background:#fff;border-bottom:1px solid #e5e5e5;padding:10px 0;font-size:0.82rem;color:var(--nsc-meta);}
-    .breadcrumb a{color:var(--nsc-meta);text-decoration:underline;}
-    .breadcrumb a:hover{color:var(--nsc-red);}
-    /* HERO */
-    #hero{background:#fff;padding:64px 0;border-bottom:1px solid #eee;}
-    .hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;}
-    .hero-left h1{font-size:2.4rem;font-weight:700;color:var(--nsc-heading);margin-bottom:14px;line-height:1.15;}
-    .hero-left h2{font-size:1.15rem;font-weight:500;color:var(--nsc-body);margin-bottom:18px;}
-    .hero-left p{font-size:1rem;color:var(--nsc-body);margin-bottom:20px;line-height:1.7;}
-    .hero-trust-badge{display:inline-flex;align-items:center;gap:8px;background:#f9f9f9;border:1px solid #e0e0e0;border-radius:4px;padding:8px 16px;color:var(--nsc-body);font-size:0.9rem;font-weight:700;margin-bottom:20px;}
-    .hero-trust-badge .star{color:var(--nsc-red);}
-    .hero-cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:16px;}
-    .hero-phone-link{color:var(--nsc-body);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
-    .hero-phone-link:hover{color:var(--nsc-red);}
-    .hero-form-card{background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:24px;box-shadow:0 4px 16px rgba(0,0,0,0.08);}
-    .hero-form-card h3{font-size:1.1rem;font-weight:600;color:var(--nsc-heading);margin-bottom:20px;}
-    .form-field{margin-bottom:14px;}
-    .form-field label{display:block;font-size:0.8rem;font-weight:600;color:var(--nsc-heading);margin-bottom:5px;text-transform:uppercase;letter-spacing:0.04em;}
-    .form-field input,.form-field select{width:100%;padding:11px 13px;border:1px solid #d0d0d0;border-radius:4px;font-family:var(--font-main);font-size:0.95rem;color:#333;background:#fff;appearance:none;-webkit-appearance:none;}
-    .form-field input:focus,.form-field select:focus{outline:2px solid var(--nsc-red);border-color:var(--nsc-red);}
-    .select-wrapper{position:relative;}
-    .select-wrapper::after{content:"▼";font-size:0.6rem;color:#666;position:absolute;right:13px;top:50%;transform:translateY(-50%);pointer-events:none;}
-    /* WHY CHOOSE */
-    #why-choose{background:#f5f5f5;}
-    .why-choose-list{margin:16px 0 24px;}
-    .why-choose-list li{padding:9px 0 9px 26px;position:relative;color:var(--nsc-body);border-bottom:1px solid #e8e8e8;line-height:1.5;font-size:0.97rem;}
-    .why-choose-list li::before{content:"✔";position:absolute;left:0;color:var(--nsc-green);font-weight:700;}
-    /* MAIN CONTENT */
-    #main-content{background:#fff;}
-    .content-body p{color:var(--nsc-body);font-size:1rem;line-height:1.75;margin-bottom:16px;}
-    .content-body h3{font-size:1.15rem;font-weight:700;color:var(--nsc-heading);margin:24px 0 10px;}
-    .content-body ul{margin:8px 0 16px 0;}
-    .content-body ul li{padding:6px 0 6px 22px;position:relative;color:var(--nsc-body);font-size:0.97rem;line-height:1.5;}
-    .content-body ul li::before{content:"•";position:absolute;left:0;color:var(--nsc-red);font-weight:700;}
-    /* REVIEWS */
-    #reviews{background:#fff;}
-    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px;}
-    .review-card{background:#fff;border:0.5px solid #e0e0e0;border-radius:8px;padding:20px;}
-    .review-stars{color:var(--nsc-red);font-size:1rem;margin-bottom:10px;letter-spacing:2px;}
-    .review-text{font-size:0.92rem;color:var(--nsc-body);line-height:1.6;margin-bottom:14px;font-style:italic;}
-    .review-author{font-weight:700;font-size:0.88rem;color:var(--nsc-heading);}
-    /* LOCATION */
-    #location{background:#fff;}
-    .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start;margin-top:32px;}
-    .map-wrapper{border-radius:8px;overflow:hidden;border:1px solid #e5e5e5;}
-    .map-wrapper iframe{width:100%;height:380px;border:0;display:block;}
-    .location-info{background:#f9f9f9;border:1px solid #e5e5e5;border-radius:8px;padding:28px;}
-    .location-info h3{font-size:1.15rem;font-weight:700;color:var(--nsc-heading);margin-bottom:18px;}
-    .location-row{display:flex;gap:10px;align-items:flex-start;margin-bottom:14px;font-size:0.93rem;color:var(--nsc-body);}
-    .location-row strong{color:var(--nsc-heading);}
-    .location-row a{color:var(--nsc-red);}
-    .location-row a:hover{text-decoration:underline;}
-    /* SECOND FORM */
-    #form{background:#fff;}
-    .form-section-title{font-size:1.8rem;font-weight:700;color:var(--nsc-heading);margin-bottom:10px;}
-    .form-trust-badges{display:flex;flex-wrap:wrap;gap:20px;margin-bottom:28px;margin-top:16px;}
-    .form-trust-badge{font-size:0.88rem;font-weight:600;color:var(--nsc-body);display:flex;align-items:center;gap:6px;}
-    .form-trust-badge .check{color:var(--nsc-red);font-weight:700;}
-    .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:680px;}
-    .form-field-full{grid-column:1/-1;}
-    /* FAQS */
-    #faqs{background:#f5f5f5;}
-    .faq-list{max-width:760px;margin-top:28px;}
-    .faq-item{border-bottom:1px solid #e0e0e0;}
-    .faq-item:first-child{border-top:1px solid #e0e0e0;}
-    .faq-question{width:100%;background:none;border:none;text-align:left;padding:18px 40px 18px 0;font-family:var(--font-main);font-size:1rem;font-weight:700;color:var(--nsc-heading);cursor:pointer;position:relative;display:block;}
-    .faq-question::after{content:"+";position:absolute;right:0;top:50%;transform:translateY(-50%);font-size:1.4rem;color:var(--nsc-red);font-weight:400;transition:transform 0.25s ease;}
-    .faq-question[aria-expanded="true"]::after{content:"−";}
-    .faq-answer{max-height:0;overflow:hidden;transition:max-height 0.25s ease;font-size:0.95rem;color:var(--nsc-body);line-height:1.65;}
-    .faq-answer-inner{padding:0 0 18px 0;}
-    /* FOOTER */
-    #site-footer{background:var(--nsc-footer);color:#aaa;}
-    .footer-inner{padding:52px 20px 36px;max-width:1140px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;}
-    .footer-logo img{height:50px;width:auto;margin-bottom:16px;}
-    .footer-blurb{font-size:0.88rem;line-height:1.7;color:#aaa;max-width:320px;margin-bottom:16px;}
-    .footer-socials{display:flex;gap:10px;}
-    .footer-social-link{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;background:rgba(255,255,255,0.08);border-radius:4px;color:#ddd;font-size:0.8rem;font-weight:700;transition:background 0.2s;}
-    .footer-social-link:hover{background:var(--nsc-red);color:#fff;}
-    .footer-col h4{color:#fff;font-size:0.9rem;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:14px;}
-    .footer-col p,.footer-col a{font-size:0.88rem;color:#aaa;display:block;margin-bottom:8px;line-height:1.5;}
-    .footer-col a:hover{color:#fff;}
-    .footer-phone-lg{font-size:1.2rem;font-weight:700;color:#fff!important;margin-bottom:12px!important;}
-    .footer-phone-lg:hover{color:var(--nsc-red)!important;}
-    .footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:16px 20px;max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:0.82rem;color:#777;text-align:center;}
-    .footer-bottom a{color:#777;text-decoration:underline;}
-    .footer-bottom a:hover{color:#aaa;}
-    @media(max-width:900px){.hero-grid{grid-template-columns:1fr;}.reviews-grid{grid-template-columns:repeat(2,1fr);}.location-grid{grid-template-columns:1fr;}.footer-inner{grid-template-columns:1fr 1fr;}}
-    @media(max-width:768px){.header-address{display:none;}.header-phone{display:none;}.header-call-icon{display:flex;}.section-heading{font-size:1.5rem;}.hero-left h1{font-size:1.9rem;}.reviews-grid{grid-template-columns:1fr;}.form-grid{grid-template-columns:1fr;}.form-field-full{grid-column:1;}.footer-inner{grid-template-columns:1fr;}}
-  </style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -148,18 +23,32 @@
 
 <header id="site-header">
   <div class="header-inner">
-    <a class="header-logo" href="/"><img src="/assets/images/Noranada-Service-Centre-Logo.png" alt="Noranda Service Centre Logo" width="160" height="56"></a>
+    <a class="header-logo" href="/">
+      <img src="/assets/images/Noranada-Service-Centre-Logo.png" alt="Noranda Service Centre Logo" width="160" height="56">
+    </a>
     <a class="header-address" href="https://maps.app.goo.gl/vwbdHaRLmXwM7zWu5" target="_blank" rel="noopener">
-      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
       2/3 Cobbler Pl, Mirrabooka WA 6061
     </a>
     <div class="header-right">
       <a class="header-phone" href="tel:+61893448155">08 9344 8155</a>
-      <a class="header-call-icon" href="tel:+61893448155" aria-label="Call us"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>Call</a>
-      <a class="header-cta" href="#form">Online Quote</a>
+      <a class="header-call-icon" href="tel:+61893448155" aria-label="Call us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.61 21 3 13.39 3 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z"/></svg>
+        Call
+      </a>
+      <a class="header-cta" href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </header>
+
+<div class="trust-strip">
+  <div class="trust-strip-inner">
+    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+  </div>
+</div>
 
 <nav class="breadcrumb">
   <div class="container">
@@ -263,186 +152,12 @@
       <span class="form-trust-badge"><span class="check">&#10003;</span> Honest, experienced mechanics</span>
       <span class="form-trust-badge"><span class="check">&#10003;</span> Upfront pricing</span>
     </div>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- WhatConverts -->
 <script>var $wc_load=function(a){return JSON.parse(JSON.stringify(a))},$wc_leads=$wc_leads||{doc:{url:$wc_load(document.URL),ref:$wc_load(document.referrer),search:$wc_load(location.search),hash:$wc_load(location.hash)}};</script>
 <script src="//s.ksrndkehqnwntyxlhgto.com/155600.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-
-<style>
-.ns-booking-form *, .ns-booking-form *::before, .ns-booking-form *::after {
-  box-sizing: border-box; margin: 0; padding: 0;
-}
-.ns-booking-form {
-  --red: #cc0000;
-  --green: #a7cd0c;
-  --black: #000000;
-  --white: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--black);
-  background: var(--white);
-  width: 100%;
-  padding-bottom: 48px;
-}
-.ns-booking-form .ns-hero {
-  background: var(--red);
-  padding: 28px 28px 22px;
-  margin-bottom: 28px;
-  position: relative;
-  overflow: hidden;
-}
-.ns-booking-form .ns-hero::after {
-  content: '';
-  position: absolute;
-  right: 0; top: 0; bottom: 0;
-  width: 130px;
-  background: repeating-linear-gradient(90deg, transparent 0px, transparent 8px, rgba(0,0,0,0.08) 8px, rgba(0,0,0,0.08) 10px);
-  pointer-events: none;
-}
-.ns-booking-form .ns-hero h2 {
-  font-family: Roboto, Arial, Helvetica, sans-serif !important;
-  font-size: 38px !important;
-  font-weight: 700 !important;
-  line-height: 1.1 !important;
-  color: #fff !important;
-  margin-bottom: 8px !important;
-  text-transform: uppercase !important;
-  position: relative;
-  z-index: 1;
-  border: none !important;
-  padding: 0 !important;
-}
-.ns-booking-form .ns-hero p {
-  font-size: 13px;
-  color: #fff;
-  opacity: 0.75;
-  position: relative;
-  z-index: 1;
-}
-.ns-booking-form .ns-body { padding: 0 28px; }
-.ns-booking-form .ns-section {
-  font-size: 10px;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--green);
-  margin: 24px 0 14px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-family: Roboto, Arial, sans-serif;
-}
-.ns-booking-form .ns-section::after {
-  content: '';
-  flex: 1;
-  height: 1px;
-  background: var(--black);
-  opacity: 0.15;
-}
-.ns-booking-form .ns-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
-.ns-booking-form .ns-full  { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 12px; }
-@media (max-width: 600px) {
-  .ns-booking-form .ns-grid2 { grid-template-columns: 1fr; }
-}
-.ns-booking-form .ns-field { display: flex; flex-direction: column; gap: 5px; }
-.ns-booking-form .ns-field label {
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--black);
-  font-family: Arial, Helvetica, sans-serif;
-}
-.ns-booking-form .ns-field label .req { color: var(--red); margin-left: 2px; }
-.ns-booking-form .ns-field input,
-.ns-booking-form .ns-field select,
-.ns-booking-form .ns-field textarea {
-  background: var(--white);
-  border: 2px solid var(--black);
-  border-radius: 0;
-  color: var(--black);
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 9px 11px;
-  -webkit-appearance: none;
-  appearance: none;
-  transition: border-color 0.15s, box-shadow 0.15s;
-  width: 100%;
-}
-.ns-booking-form .ns-field select {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23000' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-  background-repeat: no-repeat;
-  background-position: right 12px center;
-  padding-right: 32px;
-  cursor: pointer;
-}
-.ns-booking-form .ns-field input:focus,
-.ns-booking-form .ns-field select:focus,
-.ns-booking-form .ns-field textarea:focus {
-  outline: none;
-  border-color: var(--red);
-  box-shadow: 0 0 0 3px rgba(204,0,0,0.12);
-}
-.ns-booking-form .ns-field input.invalid,
-.ns-booking-form .ns-field select.invalid,
-.ns-booking-form .ns-field textarea.invalid { border-color: var(--red); }
-.ns-booking-form .ns-field input::placeholder,
-.ns-booking-form .ns-field textarea::placeholder { color: #aaa; }
-.ns-booking-form .ns-field textarea { resize: vertical; min-height: 80px; }
-.ns-booking-form .ns-note {
-  background: #f9f9f9;
-  border-left: 3px solid var(--red);
-  padding: 10px 14px;
-  font-size: 12px;
-  color: #555;
-  margin-top: 4px;
-  margin-bottom: 12px;
-}
-.ns-booking-form .ns-submit {
-  width: 100%;
-  background: var(--red);
-  border: none;
-  border-radius: 0;
-  color: var(--white);
-  font-family: Roboto, Arial, sans-serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  padding: 16px;
-  cursor: pointer;
-  margin-top: 24px;
-  text-transform: uppercase;
-  transition: background 0.15s;
-  display: block;
-}
-.ns-booking-form .ns-submit:hover { background: #aa0000; }
-.ns-booking-form .ns-submit:disabled { background: #aaa; cursor: not-allowed; }
-.ns-booking-form .ns-disclaimer {
-  font-size: 11px;
-  color: #888;
-  text-align: center;
-  margin-top: 12px;
-}
-.ns-booking-form .ns-hint {
-  font-size: 12px;
-  color: var(--red);
-  margin-top: 4px;
-  line-height: 1.4;
-}
-.ns-booking-form .ns-error {
-  display: none;
-  color: var(--red);
-  font-size: 13px;
-  margin-top: 12px;
-  padding: 10px 14px;
-  background: #f9f9f9;
-  border-left: 3px solid var(--red);
-}
-</style>
 
 <div class="ns-booking-form">
 
@@ -676,7 +391,7 @@
   <div class="footer-inner">
     <div class="footer-left">
       <a href="/"><img src="/assets/images/Noranada-Service-Centre-Logo.png" alt="Noranda Service Centre" class="footer-logo" width="140" height="48"></a>
-      <p class="footer-blurb">Noranda Service Centre — your trusted local mechanic in Mirrabooka. Family-run for 30+ years, honest advice, quality repairs.</p>
+      <p class="footer-blurb">Noranda Service Centre is your trusted local mechanic in Mirrabooka and surrounding suburbs. Family-run for 30+ years, we offer honest advice, quality repairs and friendly service that keeps our community moving safely.</p>
       <div class="footer-socials">
         <a class="footer-social-link" href="https://www.facebook.com/NorandaServiceCentre/" target="_blank" rel="noopener" aria-label="Facebook">FB</a>
         <a class="footer-social-link" href="https://www.instagram.com/noranda_service_centre/" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
@@ -684,7 +399,7 @@
     </div>
     <div class="footer-col">
       <h4>Location</h4>
-      <p>&copy; 2026 Noranda Service Centre</p>
+      <p>Licence No: MRB9580</p>
       <a href="https://maps.app.goo.gl/vwbdHaRLmXwM7zWu5" target="_blank" rel="noopener">2/3 Cobbler Pl, Mirrabooka WA 6061</a>
       <a href="../privacy-policy/">Privacy Policy</a>
       <a href="../terms-of-service/">Terms of Service</a>
@@ -694,9 +409,15 @@
       <a class="footer-phone-lg" href="tel:+61893448155">08 9344 8155</a>
       <p>Monday&ndash;Friday</p>
       <p>8:00 AM &ndash; 5:00 PM</p>
+      <a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener" style="margin-top:8px;">Google Reviews &#9733;</a>
     </div>
   </div>
-  <div class="footer-bottom"><p>&copy; 2026 Noranda Service Centre &nbsp;|&nbsp; <a href="../privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="../terms-of-service/">Terms of Service</a></p></div>
+  <div class="footer-bottom">
+    <div class="footer-bottom-inner">
+      <span>&copy; 2026 Noranda Service Centre</span>
+      <span><a href="../privacy-policy/">Privacy Policy</a> &nbsp;|&nbsp; <a href="../terms-of-service/">Terms of Service</a></span>
+    </div>
+  </div>
 </footer>
 
 <script>
