@@ -75,7 +75,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="star" aria-hidden="true">&#9733;</span> 5 &mdash; Trusted by Perth Drivers
         </a>
         <div class="hero-cta-row">
-          <a class="btn btn-red" href="#form">Book Now for Monday</a>
+          <a class="btn btn-lime" href="#form">Book Now for Monday</a>
           <a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a>
         </div>
       </div>
@@ -144,7 +144,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </ul>
 
     <h3>What to Do If Your Car Is Undriveable</h3>
-    <p>If your car cannot be safely driven, do not risk it. Leave a message on <a href="tel:+61893448155" style="color:var(--nsc-red);font-weight:600;">08 9344 8155</a> or fill in the form below and let us know your situation. We can help you arrange towing if needed, and our team will contact you first thing Monday to sort out a plan.</p>
+    <p>If your car cannot be safely driven, do not risk it. Leave a message on <a href="tel:+61893448155" style="color:var(--lime);font-weight:600;">08 9344 8155</a> or fill in the form below and let us know your situation. We can help you arrange towing if needed, and our team will contact you first thing Monday to sort out a plan.</p>
   </div>
 </section>
 
@@ -212,7 +212,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section id="form" class="section-pad">
   <div class="container">
     <h2 class="form-section-title">Prefer to scroll? Book below.</h2>
-    <p style="color:var(--nsc-body);margin-bottom:8px;">Fill in the form and our team will be in touch first thing Monday. Weekend bookings are given priority.</p>
+    <p style="color:rgba(255,255,255,0.7);margin-bottom:8px;">Fill in the form and our team will be in touch first thing Monday. Weekend bookings are given priority.</p>
     <div class="form-trust-badges">
       <span class="form-trust-badge"><span class="check">&#10003;</span> Monday priority bookings</span>
       <span class="form-trust-badge"><span class="check">&#10003;</span> All makes and models</span>
@@ -543,7 +543,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading"
   style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.5);align-items:center;justify-content:center;padding:20px;">
   <div style="background:#fff;border-radius:12px;max-width:540px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
-    <div style="background:var(--nsc-red);padding:20px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="background:var(--lime);padding:20px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;">
       <h2 id="modal-heading" style="color:#fff;font-size:1.2rem;font-weight:700;margin:0;">Book Your Service</h2>
       <button id="modal-close" aria-label="Close booking form"
         style="background:rgba(0,0,0,0.25);border:none;color:#fff;font-size:1.2rem;width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--font-main);">&#x2715;</button>
@@ -602,7 +602,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   // CTA click: fires when modal opens (intent signal)
-  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(el) {
+  document.querySelectorAll('a[href="#form"].btn-lime, a.header-cta[href="#form"]').forEach(function(el) {
     el.addEventListener('click', function() {
       if (typeof dataLayer !== 'undefined') {
         dataLayer.push({ event: 'podium_form_open', form_type: 'podium' });

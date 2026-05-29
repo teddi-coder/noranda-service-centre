@@ -53,7 +53,7 @@
         <h2>Book Your 4x4 Repairs for Monday or Next Week</h2>
         <p>Car trouble never seems to wait for a good time — especially not your 4x4. While our workshop is closed on weekends, you can still send through your booking anytime or give us a call and leave a message. Our friendly team will follow up first thing Monday morning.</p>
         <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 &mdash; Trusted by Perth Drivers</a>
-        <div class="hero-cta-row"><a class="btn btn-red" href="#form">Book Now</a><a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a></div>
+        <div class="hero-cta-row"><a class="btn btn-lime" href="#form">Book Now</a><a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a></div>
       </div>
             <div class="hero-right">
         <!-- TODO: replace with real workshop photo -->
@@ -403,7 +403,7 @@
 <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading"
   style="display:none;position:fixed;inset:0;z-index:1000;background:rgba(0,0,0,0.5);align-items:center;justify-content:center;padding:20px;">
   <div style="background:#fff;border-radius:12px;max-width:540px;width:100%;max-height:90vh;overflow-y:auto;position:relative;">
-    <div style="background:var(--nsc-red);padding:20px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;">
+    <div style="background:var(--lime);padding:20px 24px;border-radius:12px 12px 0 0;display:flex;align-items:center;justify-content:space-between;">
       <h2 id="modal-heading" style="color:#fff;font-size:1.2rem;font-weight:700;margin:0;">Book Your Service</h2>
       <button id="modal-close" aria-label="Close booking form"
         style="background:rgba(0,0,0,0.25);border:none;color:#fff;font-size:1.2rem;width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--font-main);">&#x2715;</button>
@@ -462,7 +462,7 @@
   });
 
   // CTA click: fires when modal opens (intent signal)
-  document.querySelectorAll('a[href="#form"].btn-red, a.header-cta[href="#form"]').forEach(function(el) {
+  document.querySelectorAll('a[href="#form"].btn-lime, a.header-cta[href="#form"]').forEach(function(el) {
     el.addEventListener('click', function() {
       if (typeof dataLayer !== 'undefined') {
         dataLayer.push({ event: 'podium_form_open', form_type: 'podium' });
