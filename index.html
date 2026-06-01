@@ -670,6 +670,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     e.preventDefault();
     if (!validate()) return;
 
+    // WhatConverts — fire immediately on submit, before async work
+    try {
+      if (typeof window.wc_capture_form === 'function') {
+        window.wc_capture_form(form);
+      }
+    } catch (wcErr) {
+      console.warn('WhatConverts capture failed:', wcErr);
+    }
+
     submitBtn.disabled    = true;
     submitBtn.textContent = 'Sending...';
     errorMsg.style.display = 'none';
@@ -692,16 +701,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         submitBtn.disabled     = false;
         submitBtn.textContent  = 'Submit Booking Request \u2192';
         return;
-      }
-
-      try {
-        if (typeof window.wc_capture_form === 'function') {
-          window.wc_capture_form(form);
-        } else if (typeof window.__wc !== 'undefined' && typeof window.__wc.trackFormSubmission === 'function') {
-          window.__wc.trackFormSubmission(form);
-        }
-      } catch (wcErr) {
-        console.warn('WhatConverts capture failed:', wcErr);
       }
 
       if (typeof gtag === 'function') {
