@@ -1,44 +1,8 @@
-# WordPress pages that don't have a matching new page
-/hello-world/                   /                       301
+# WordPress paths with no matching static page → redirect to most relevant static page
+/hello-world/                   /                   301
+/category/uncategorized/        /                   301
+/e-floating-buttons/call-now/   /                   301
+/e-floating-buttons/call-now-1/ /                   301
 
-# Homepage variants
-/index.php                      /                       301
-
-# Service page slug change
-/ac-heater-repair               /ac-repair/             301
-/ac-heater-repair/              /ac-repair/             301
-
-# All service pages (old slug → new slug with trailing slash)
-/4x4-mechanic/                  /4x4-mechanic/          301
-/4x4-mechanic-weekend/          /4x4-mechanic-weekend/  301
-/ac-repair/                     /ac-repair/             301
-/ac-heater-repair-call/         /ac-heater-repair-call/ 301
-/audi/                          /audi/                  301
-/bmw/                           /bmw/                   301
-/car-emergency-repair-weekend/  /car-emergency-repair-weekend/ 301
-/car-repair/                    /car-repair/            301
-/car-repair-weekend/            /car-repair-weekend/    301
-/car-servicing-weekend/         /car-servicing-weekend/ 301
-/dpf-cleaning/                  /dpf-cleaning/          301
-/euro-vehicle/                  /euro-vehicle/          301
-/fleet/                         /fleet/                 301
-/general-repairs/               /general-repairs/       301
-/mercedes/                      /mercedes/              301
-/nissan-repair/                 /nissan-repair/         301
-/thank-you/                     /thank-you/             301
-/vw/                            /vw/                    301
-/privacy-policy/                /privacy-policy/        301
-/terms-of-service/              /terms-of-service/      301
-
-# WordPress admin and system paths — redirect to homepage
-/wp-admin/*                     /                       301
-/wp-login.php                   /                       301
-/wp-content/*                   /                       301
-/wp-includes/*                  /                       301
-/feed/                          /                       301
-/xmlrpc.php                     /                       301
-
-# WordPress page slugs that no longer exist
-/car-servicing/                 /                       301
-/hello/                         /                       301
-/sample-page/                   /                       301
+# Catch-all
+/*  /  301
