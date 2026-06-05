@@ -21,7 +21,7 @@
 </head>
 <body>
 <!-- EOFY Announcement Bar -->
-<div style="width:100%;background:#111111;border-bottom:2px solid #C8E63C;box-sizing:border-box;">
+<div id="eofy-announcement-bar" style="width:100%;background:#111111;border-bottom:2px solid #C8E63C;box-sizing:border-box;">
   <div style="max-width:100%;padding:12px 40px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;box-sizing:border-box;">
     <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
       <span style="background:#C8E63C;color:#111111;font-family:'Oswald',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;padding:4px 12px;border-radius:3px;white-space:nowrap;">EOFY SPECIAL</span>
@@ -30,21 +30,16 @@
         <div style="color:rgba(255,255,255,0.6);font-family:'Barlow',sans-serif;font-size:0.8rem;margin-top:3px;">Audi, BMW, Mercedes and VW specialists in Mirrabooka. Save $100 before 30 June.</div>
       </div>
     </div>
-    <div style="display:flex;align-items:center;gap:20px;flex-wrap:wrap;">
+    <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
       <div style="text-align:center;">
         <div style="color:#C8E63C;font-family:'Oswald',sans-serif;font-size:2rem;font-weight:700;line-height:1;text-transform:uppercase;">$295</div>
         <div style="color:#e05c2a;font-family:'Barlow',sans-serif;font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.05em;">Ends 30 June 2026</div>
       </div>
       <a href="tel:+61893448155" style="background:#C8E63C;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;padding:12px 28px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;">Call Now</a>
+      <button onclick="document.getElementById('eofy-announcement-bar').style.display='none';" aria-label="Close announcement" style="background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.6);font-size:1.1rem;width:28px;height:28px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;padding:0;line-height:1;">&times;</button>
     </div>
   </div>
 </div>
-<style>
-  @media (max-width: 640px) {
-    .eofy-bar-inner { padding: 12px 16px !important; }
-    .eofy-bar-price { font-size: 1.5rem !important; }
-  }
-</style>
 <!-- End EOFY Announcement Bar -->
 
 <!-- Google Tag Manager (noscript) -->
