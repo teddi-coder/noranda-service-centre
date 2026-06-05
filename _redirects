@@ -11,6 +11,7 @@
 # All service pages (old slug → new slug with trailing slash)
 /4x4-mechanic/                  /4x4-mechanic/          301
 /4x4-mechanic-weekend/          /4x4-mechanic-weekend/  301
+/4x4-servicing/                 /4x4-servicing/         301
 /ac-repair/                     /ac-repair/             301
 /ac-heater-repair-call/         /ac-heater-repair-call/ 301
 /audi/                          /audi/                  301
