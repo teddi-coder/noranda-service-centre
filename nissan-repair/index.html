@@ -69,12 +69,12 @@ section.suppliers p,
     </div>
   </div>
 </header>
-<div class="trust-strip">
+<div class="trust-strip" style="background:#ffffff;">
   <div class="trust-strip-inner">
-    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">20+</span><span class="trust-stat-label" style="color:#333333;">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">4.9&#9733;</span><span class="trust-stat-label" style="color:#333333;">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">All Makes</span><span class="trust-stat-label" style="color:#333333;">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">8</span><span class="trust-stat-label" style="color:#333333;">Fleet Companies</span></div>
   </div>
 </div>
 <nav class="breadcrumb"><div class="container"><a href="../">Home</a> &rsaquo; Nissan Repairs Noranda</div></nav>
@@ -89,26 +89,58 @@ section.suppliers p,
         <div class="hero-cta-row"><a class="btn btn-lime" href="#form">Get a Free Quote</a><a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a></div>
       </div>
             <div class="hero-right">
-        <!-- TODO: replace with real workshop photo -->
-        <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=600&q=80"
-          alt="Noranda Service Centre workshop — Nissan specialist mechanics"
+        <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-4-2-optimized-768x513.jpg"
+          alt="Noranda Service Centre team — Nissan specialist mechanics"
           style="width:100%;height:100%;object-fit:cover;border-radius:10px;"
           loading="eager">
       </div>
     </div>
   </div>
 </section>
+
+<!-- THREE-IMAGE FEATURE BANNER -->
+<section class="img-banner-3" style="padding:0;overflow:hidden;">
+  <div class="img-banner-3-inner" style="display:flex;gap:0;">
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Mechanic-Looking-at-Interior-Vehicle-Parts-using-Mechanic-Gadget.jpg" alt="Mechanic inspecting vehicle" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Services-Car-Auto-Inspections-Vehicle-Inspection-using-Torch-in-Car-Belly.jpg" alt="Vehicle inspection" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Car-Checkup-Using-Gadget-on-Black-Audi-Car.jpg" alt="Car diagnostic check" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+  </div>
+</section>
+<style>
+@media (max-width:767px){
+  .img-banner-3-inner { display:flex !important; flex-wrap:nowrap !important; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; gap:0 !important; }
+  .img-banner-3-item { min-width:85vw !important; scroll-snap-align:start; }
+  .img-banner-3-item img { height:220px !important; }
+}
+</style>
+<!-- End Three-Image Feature Banner -->
+
 <section id="why-choose" class="section-pad">
   <div class="container">
     <h2 class="section-heading">Why Choose Us for Nissan Repairs?</h2>
-    <ul class="why-choose-list">
-      <li>Straight, honest communication — no jargon, no surprises</li>
-      <li>Quality parts and professional workmanship on every Nissan job</li>
-      <li>Diagnostics, repairs, and servicing done right the first time</li>
-      <li>Friendly mechanics who treat your car like their own</li>
-      <li>Convenient for Noranda, Mirrabooka, Dianella, Malaga &amp; Ballajura</li>
-      <li>30+ years of experience — family-run, community trusted</li>
-    </ul>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:2rem;">
+      <div>
+        <ul class="why-choose-list">
+          <li><span class="icon-badge">&#10003;</span>Straight, honest communication — no jargon, no surprises</li>
+          <li><span class="icon-badge">&#10003;</span>Quality parts and professional workmanship on every Nissan job</li>
+          <li><span class="icon-badge">&#10003;</span>Diagnostics, repairs, and servicing done right the first time</li>
+          <li><span class="icon-badge">&#10003;</span>Friendly mechanics who treat your car like their own</li>
+          <li><span class="icon-badge">&#10003;</span>Convenient for Noranda, Mirrabooka, Dianella, Malaga &amp; Ballajura</li>
+          <li><span class="icon-badge">&#10003;</span>30+ years of experience — family-run, community trusted</li>
+        </ul>
+        <div class="cta-pair" style="margin-top:1.5rem;">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
+      </div>
+      <div><img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Services-Car-Auto-Inspections-Vehicle-Inspection-using-Torch-in-Car-Belly.jpg" alt="Vehicle inspection" style="width:100%;border-radius:10px;object-fit:cover;"></div>
+    </div>
   </div>
 </section>
 <section id="main-content" class="section-pad">
@@ -134,10 +166,21 @@ section.suppliers p,
 <section id="reviews" class="section-pad">
   <div class="container">
     <h2 class="section-heading">Real 5&#9733; Reviews from Perth Drivers</h2>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. Quality work at reasonable prices."</p><p class="review-author">Haleluya Ghebremedhn</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after."</p><p class="review-author">Liam Mashiah</p></div>
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-carousel">
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. Quality work at reasonable prices."</p><p class="review-author">Haleluya Ghebremedhn</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after."</p><p class="review-author">Liam Mashiah</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Have always received very professional advice from these guys and it's clear they always prioritise the customer's interests. Will always trust I will receive my vehicle better than how I left it."</p><p class="review-author">Lachlan Brice</p></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous review">&#8592;</button>
+        <button class="carousel-next" aria-label="Next review">&#8594;</button>
+      </div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:1.5rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -152,6 +195,10 @@ section.suppliers p,
         <div class="location-row"><span>&#128205;</span><span><a href="https://maps.app.goo.gl/vwbdHaRLmXwM7zWu5" target="_blank" rel="noopener">2/3 Cobbler Pl, Mirrabooka WA 6061</a></span></div>
         <div class="location-row"><span>&#128222;</span><span><a href="tel:+61893448155">08 9344 8155</a></span></div>
         <div class="location-row"><span>&#9733;</span><span><a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener">Read our Google Reviews</a></span></div>
+        <div class="cta-pair" style="margin-top:1.5rem;">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
       </div>
     </div>
   </div>
@@ -164,6 +211,10 @@ section.suppliers p,
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you service Nissan Patrol?</button><div class="faq-answer"><div class="faq-answer-inner">Yes — we work on GU, Y61 and Y62 Patrols. Diesel servicing, cooling repairs, suspension, and all general servicing.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you fix Nissan warning lights?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We use scan tools to read fault codes accurately across all Nissan models. We diagnose first, then explain what needs to be done — no guesswork.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you service the Nissan Leaf EV?</button><div class="faq-answer"><div class="faq-answer-inner">Yes — we offer general servicing for the Nissan Leaf. EV servicing is mostly focused on brakes, tyres, cabin air filter and safety systems as there is no engine oil service required.</div></div></div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -202,6 +253,11 @@ section.suppliers p,
 <script>
   document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var answer=btn.nextElementSibling;var isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});
   document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){var href=this.getAttribute('href');if(href==="#form"&&document.getElementById('booking-modal'))return;var target=document.querySelector(href);if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}});});
+  var carousel = document.querySelector('.reviews-carousel');
+  if (carousel) {
+    document.querySelector('.carousel-prev') && document.querySelector('.carousel-prev').addEventListener('click', function(){ carousel.scrollBy({left: -340, behavior: 'smooth'}); });
+    document.querySelector('.carousel-next') && document.querySelector('.carousel-next').addEventListener('click', function(){ carousel.scrollBy({left: 340, behavior: 'smooth'}); });
+  }
 </script>
 <!-- Booking modal -->
 <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading"

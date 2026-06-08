@@ -118,12 +118,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </header>
 
-<div class="trust-strip">
+<div class="trust-strip" style="background:#ffffff;">
   <div class="trust-strip-inner">
-    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">20+</span><span class="trust-stat-label" style="color:#333333;">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">4.9&#9733;</span><span class="trust-stat-label" style="color:#333333;">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">All Makes</span><span class="trust-stat-label" style="color:#333333;">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">8</span><span class="trust-stat-label" style="color:#333333;">Fleet Companies</span></div>
   </div>
 </div>
 
@@ -153,6 +153,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </section>
+
+<!-- THREE-IMAGE FEATURE BANNER -->
+<section class="img-banner-3" style="padding:0;overflow:hidden;">
+  <div class="img-banner-3-inner" style="display:flex;gap:0;">
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Mechanic-Looking-at-Interior-Vehicle-Parts-using-Mechanic-Gadget.jpg" alt="Mechanic inspecting vehicle" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Services-Car-Auto-Inspections-Vehicle-Inspection-using-Torch-in-Car-Belly.jpg" alt="Vehicle inspection" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+    <div class="img-banner-3-item" style="flex:1;min-width:0;overflow:hidden;">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Car-Checkup-Using-Gadget-on-Black-Audi-Car.jpg" alt="Car diagnostic check" loading="lazy" style="width:100%;height:260px;object-fit:cover;display:block;">
+    </div>
+  </div>
+</section>
+<style>
+@media (max-width:767px){
+  .img-banner-3-inner { display:flex !important; flex-wrap:nowrap !important; overflow-x:auto; -webkit-overflow-scrolling:touch; scroll-snap-type:x mandatory; gap:0 !important; }
+  .img-banner-3-item { min-width:85vw !important; scroll-snap-align:start; }
+  .img-banner-3-item img { height:220px !important; }
+}
+</style>
+<!-- End Three-Image Feature Banner -->
 
 <!-- EOFY Promo Section -->
 <section id="eofy-promo" style="background:#C8E63C;padding:48px 0;">
@@ -224,52 +247,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="section-sub">From routine logbook servicing to specialist diagnostics, our team handles it all under one roof.</p>
     <div class="services-grid">
       <div class="service-card">
-        <span class="service-card-icon">&#128203;</span>
+        <img src="/assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="European car logbook servicing" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Logbook Servicing</h3>
         <p>Maintain your manufacturer warranty with professional scheduled servicing completed to factory specifications using approved parts and fluids.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#128187;</span>
+        <img src="/assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="European car diagnostics" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Diagnostics &amp; Fault Finding</h3>
         <p>Modern European vehicles rely on advanced electronics. We use specialised diagnostic tools to accurately identify faults and repair issues properly.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#128269;</span>
+        <img src="/assets/images/Noranda-Service-Centre-56-2-768x513.jpg" alt="European car brake and suspension repairs" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Brake Repairs &amp; Suspension</h3>
         <p>From brake pads and rotors to suspension components and steering repairs, we help keep your European vehicle safe and responsive.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#9881;</span>
+        <img src="/assets/images/Noranda-Service-Centre-118-768x513.jpg" alt="European car engine repairs" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Engine Repairs &amp; Cooling Systems</h3>
         <p>We diagnose overheating, oil leaks, timing issues, cooling faults, and general engine performance problems across all European brands.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#10052;</span>
+        <img src="/assets/images/Noranda-Service-Centre-192-768x513.jpg" alt="European car air conditioning repairs" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Air Conditioning Repairs</h3>
         <p>Stay comfortable year-round with professional air conditioning servicing, regassing, and repairs for European vehicles.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#128295;</span>
+        <img src="/assets/images/Noranda-Service-Centre-99-768x513.jpg" alt="DSG transmission servicing" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>DSG &amp; European Transmission</h3>
         <p>Specialised servicing for DSG gearboxes and European automatic transmissions to maintain smooth performance and long-term reliability.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#128270;</span>
+        <img src="/assets/images/Noranda-Service-Centre-186-1-768x513.jpg" alt="Pre-purchase vehicle inspection" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Pre-Purchase Inspections</h3>
         <p>Buying a used BMW, Audi, Mercedes, or VW? We provide detailed inspections to help you avoid expensive surprises.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
       </div>
       <div class="service-card">
-        <span class="service-card-icon">&#128664;</span>
+        <img src="/assets/images/Noranda-Service-Centre-51-1-optimized.jpg" alt="Fleet vehicle servicing" style="width:100%;height:200px;object-fit:cover;display:block;" loading="lazy">
         <h3>Fleet Servicing</h3>
         <p>Tailored fleet maintenance for businesses running European vehicles. Fast turnaround, minimal downtime.</p>
-        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="font-weight:700;text-transform:uppercase;letter-spacing:0.05em;font-size:0.85rem;">BOOK NOW &rarr;</a>
+      </div>
+      <div class="cta-pair" style="margin-top:1.5rem;justify-content:center;">
+        <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+        <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
       </div>
     </div>
   </div>
@@ -324,6 +351,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
     <p style="margin-top:28px;color:rgba(255,255,255,0.6);font-size:0.95rem;">We also service Skoda, Mini, Volvo, Porsche, Jaguar, and other European makes. Call us to confirm we can help with your specific vehicle.</p>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
   </div>
 </section>
 
@@ -332,27 +363,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="container">
     <div class="section-label"><span>Customer Reviews</span></div>
     <h2 class="section-heading">Real 5&#9733; Reviews from Euro Vehicle Drivers</h2>
-    <div class="reviews-grid">
-      <div class="review-card">
-        <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues which other service centres failed to rectify. The guys at Noranda found the mechanical faults, rectified them, and provided the best vehicle service experience. Can thoroughly recommend for any vehicle requirement."</p>
-        <p class="review-author">Don Dungey</p>
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-carousel">
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues which other service centres failed to rectify. The guys at Noranda found the mechanical faults, rectified them, and provided the best vehicle service experience. Can thoroughly recommend for any vehicle requirement."</p><p class="review-author">Don Dungey</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my GLC 220D. Minor service, all necessary things changed and inspected. I liked their recorded video method to highlight what additional things need addressing. Pickup and drop-off provided. Overall great experience. Absolute Bloody Legends!"</p><p class="review-author">Harry Sojitra</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices."</p><p class="review-author">Haleluya Ghebremedhn</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p><p class="review-author">Liam Mashiah</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
       </div>
-      <div class="review-card">
-        <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"Service was done on my GLC 220D. Minor service, all necessary things changed and inspected. I liked their recorded video method to highlight what additional things need addressing. Pickup and drop-off provided. Overall great experience. Absolute Bloody Legends!"</p>
-        <p class="review-author">Harry Sojitra</p>
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous review">&#8592;</button>
+        <button class="carousel-next" aria-label="Next review">&#8594;</button>
       </div>
-      <div class="review-card">
-        <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices."</p>
-        <p class="review-author">Haleluya Ghebremedhn</p>
-      </div>
-      <div class="review-card">
-        <div class="review-stars" aria-label="5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-        <p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p>
-        <p class="review-author">Liam Mashiah</p>
-      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:1.05rem;font-weight:600;">Call Now and Get a Free Estimate &mdash; <a href="tel:+61893448155" style="color:var(--lime);">08 9344 8155</a></p>
+    <div class="cta-pair" style="justify-content:center;margin-top:1rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -435,6 +462,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <span class="location-icon">&#9733;</span>
           <span><a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener">Read our Google Reviews</a></span>
         </div>
+        <div class="cta-pair" style="margin-top:1.5rem;">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
       </div>
     </div>
   </div>
@@ -470,6 +501,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <button class="faq-question" aria-expanded="false">Do you work on older European cars?</button>
         <div class="faq-answer"><div class="faq-answer-inner">Yes. We service both newer and older European models. Whether you have a modern turbocharged VW or a classic older-generation BMW, our team has the experience to service and repair it correctly.</div></div>
       </div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -507,6 +542,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </footer>
 
+<script>
+  // Carousel controls
+  var carousel = document.querySelector('.reviews-carousel');
+  if (carousel) {
+    document.querySelector('.carousel-prev') && document.querySelector('.carousel-prev').addEventListener('click', function(){
+      carousel.scrollBy({left: -340, behavior: 'smooth'});
+    });
+    document.querySelector('.carousel-next') && document.querySelector('.carousel-next').addEventListener('click', function(){
+      carousel.scrollBy({left: 340, behavior: 'smooth'});
+    });
+  }
+</script>
 <script>
   document.querySelectorAll('.faq-question').forEach(function(btn){
     btn.addEventListener('click',function(){
