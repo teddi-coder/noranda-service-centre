@@ -46,6 +46,10 @@ section.suppliers p,
 #how-it-works .how-cta,
 #models .cta-pair,
 .final-cta-section .cta-pair { justify-content: center; }
+
+/* FAQ accordion centred */
+#faqs .faq-list { max-width: 780px; margin: 0 auto; }
+#faqs .faq-question { text-align: center; justify-content: center; }
 </style>
 </head>
 <body>
@@ -87,12 +91,12 @@ section.suppliers p,
         <h1>Fleet Servicing for Perth Businesses</h1>
         <h2>Trusted by Leading Fleet Providers Across Perth</h2>
         <p>Keep your vehicles on the road with reliable fleet servicing, repairs and maintenance from Noranda Service Centre. Trusted by fleet providers across Perth for fast turnaround times, clear communication and dependable workmanship.</p>
-        <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 &mdash; Trusted by Perth Businesses</a>
+        <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5   Trusted by Perth Businesses</a>
         <div class="hero-cta-row"><a class="btn btn-lime" href="#form">Request Fleet Pricing</a><a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a></div>
       </div>
       <div class="hero-right">
         <img src="/assets/images/Noranda-Service-Centre-Optimized-1024x681.jpg"
-          alt="Noranda Service Centre workshop — fleet vehicle servicing Perth"
+          alt="Noranda Service Centre workshop fleet vehicle servicing Perth"
           style="width:100%;height:100%;object-fit:cover;border-radius:10px;"
           loading="eager">
       </div>
@@ -148,8 +152,8 @@ section.suppliers p,
     <ul class="why-choose-list">
       <li>Fast turnaround to keep your fleet operational and revenue flowing</li>
       <li>Works with all major fleet management and novated lease providers</li>
-      <li>Manufacturer logbook servicing — keeps warranties valid across your fleet</li>
-      <li>Clear communication and upfront pricing — no surprises on the invoice</li>
+      <li>Manufacturer logbook servicing keeps warranties valid across your fleet</li>
+      <li>Clear communication and upfront pricing no surprises on the invoice</li>
       <li>Experienced team handling everything from scheduled services to major repairs</li>
       <li>Family-run workshop with 30+ years serving Perth businesses</li>
     </ul>
@@ -194,7 +198,7 @@ section.suppliers p,
 <section id="how-it-works" class="section-pad">
   <div class="container">
     <h2 class="section-heading">How Our Fleet Servicing Works</h2>
-    <p class="section-sub">Simple, straightforward service — so you spend less time managing maintenance and more time running your business.</p>
+    <p class="section-sub">Simple, straightforward service so you spend less time managing maintenance and more time running your business.</p>
     <div class="steps-wrapper">
       <div class="step-item">
         <div class="step-number">1</div>
@@ -211,7 +215,7 @@ section.suppliers p,
       <div class="step-item">
         <div class="step-number">3</div>
         <p class="step-title">Keep Your Business Moving</p>
-        <p class="step-desc">Your vehicles get back on the road quickly and safely — with full documentation.</p>
+        <p class="step-desc">Your vehicles get back on the road quickly and safely with full documentation.</p>
       </div>
     </div>
   </div>
@@ -351,7 +355,7 @@ section.suppliers p,
               <div class="ns-field"><label for="m-ns-preferred_date">Preferred date <span class="req">*</span></label><input type="date" name="preferred_date" id="m-ns-preferred_date" required /><p class="ns-hint" id="m-ns-hint-date"></p></div>
               <div class="ns-field"><label for="m-ns-preferred_time">Preferred time <span class="req">*</span></label><select name="preferred_time" id="m-ns-preferred_time" required><option value="" disabled selected>&#8212; Select &#8212;</option><option>Morning (8am to 12pm)</option><option>Afternoon (12pm to 4:30pm)</option><option>Either</option></select></div>
             </div>
-            <div class="ns-note">Preferred times are a request only &mdash; we'll confirm your actual slot by phone or email within 1 business day.</div>
+            <div class="ns-note">Preferred times are a request only   we'll confirm your actual slot by phone or email within 1 business day.</div>
             <button type="submit" class="ns-submit" id="m-ns-enfold-submit">Submit Booking Request &rarr;</button>
             <p class="ns-disclaimer">By submitting you agree to be contacted regarding your booking request.</p>
             <p class="ns-error" id="m-ns-enfold-error">Something went wrong. Please call us on <strong>08 9344 8155</strong> or try again.</p>
@@ -375,7 +379,7 @@ section.suppliers p,
     if (hintDate) hintDate.textContent = '';
     var v=this.value; if(!v) return;
     var p=v.split('-'); var d=new Date(p[0],p[1]-1,p[2]); var dow=d.getDay();
-    if(dow===0||dow===6){if(hintDate)hintDate.textContent="We're closed on weekends — we'll contact you to arrange a suitable date.";}
+    if(dow===0||dow===6){if(hintDate)hintDate.textContent="We're closed on weekends we'll contact you to arrange a suitable date.";}
   });
   var form=document.getElementById('booking-form-modal');
   var submitBtn=document.getElementById('m-ns-enfold-submit');

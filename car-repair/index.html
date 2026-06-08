@@ -46,6 +46,28 @@ section.suppliers p,
 #how-it-works .how-cta,
 #models .cta-pair,
 .final-cta-section .cta-pair { justify-content: center; }
+
+/* FAQ accordion centred */
+#faqs .faq-list { max-width: 780px; margin: 0 auto; }
+#faqs .faq-question { text-align: center; justify-content: center; }
+
+/* Car repair services two-column */
+#main-content .services-two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+#main-content .services-two-col img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 420px;
+}
+@media (max-width: 767px) {
+  #main-content .services-two-col { grid-template-columns: 1fr; }
+  #main-content .services-two-col img { height: 240px; }
+}
 </style>
 </head>
 <body>
@@ -94,15 +116,15 @@ section.suppliers p,
         <h1>Car Repair Mirrabooka</h1>
         <h2>Your Local, Trusted Noranda Mechanic for Servicing, Repairs &amp; Diagnostics</h2>
         <p>At Noranda Service Centre, we are your friendly and reliable local mechanics proudly serving Noranda and nearby suburbs including Mirrabooka, Dianella, Malaga and Perth's northern suburbs. For over 30 years, our family run workshop has delivered quality workmanship and dependable service.</p>
-        <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 &mdash; Trusted by Perth Drivers</a>
+        <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5   Trusted by Perth Drivers</a>
         <div class="hero-cta-row">
           <a class="btn btn-lime" href="#form">Get a Free Quote</a>
           <a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a>
         </div>
       </div>
             <div class="hero-right">
-        <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-4-2-optimized-768x513.jpg"
-          alt="Noranda Service Centre team — Mirrabooka mechanics"
+        <img src="/assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg"
+          alt="Noranda Service Centre team Mirrabooka mechanics"
           style="width:100%;height:100%;object-fit:cover;border-radius:10px;"
           loading="eager">
       </div>
@@ -139,12 +161,12 @@ section.suppliers p,
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:2rem;">
       <div>
         <ul class="why-choose-list">
-          <li><span class="icon-badge">&#10003;</span>Expert servicing — regular maintenance or full manufacturer standard service</li>
-          <li><span class="icon-badge">&#10003;</span>Warranty safe servicing — we follow manufacturer guidelines to keep your warranty valid</li>
-          <li><span class="icon-badge">&#10003;</span>Servicing for many brands, heavy trucks and 4WDs — Toyota, Mazda, Ford, Hyundai, Nissan and more</li>
-          <li><span class="icon-badge">&#10003;</span>Honest and clear communication — we explain what's needed before any work begins</li>
-          <li><span class="icon-badge">&#10003;</span>Full vehicle care beyond oil changes — engine, transmission, suspension, brakes and more</li>
-          <li><span class="icon-badge">&#10003;</span>30+ years serving Perth's north — family-run, community trusted</li>
+          <li><span class="icon-badge">&#10003;</span>Expert servicing regular maintenance or full manufacturer standard service</li>
+          <li><span class="icon-badge">&#10003;</span>Warranty safe servicing we follow manufacturer guidelines to keep your warranty valid</li>
+          <li><span class="icon-badge">&#10003;</span>Servicing for many brands, heavy trucks and 4WDs Toyota, Mazda, Ford, Hyundai, Nissan and more</li>
+          <li><span class="icon-badge">&#10003;</span>Honest and clear communication we explain what's needed before any work begins</li>
+          <li><span class="icon-badge">&#10003;</span>Full vehicle care beyond oil changes engine, transmission, suspension, brakes and more</li>
+          <li><span class="icon-badge">&#10003;</span>30+ years serving Perth's north family-run, community trusted</li>
         </ul>
         <div class="cta-pair" style="margin-top:1.5rem;">
           <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
@@ -159,20 +181,25 @@ section.suppliers p,
 <section id="main-content" class="section-pad">
   <div class="container">
     <h2 class="section-heading">Car Repair Services We Offer</h2>
-    <div class="content-body">
-      <p>From a warning light you can't explain to a full engine repair — our experienced team handles the lot. We use quality parts and provide clear, honest quotes before any work begins.</p>
-      <h3>Our Car Repair Capabilities</h3>
-      <ul>
-        <li>Engine diagnostics and repairs — all makes and models</li>
-        <li>Brake repairs — pads, rotors, callipers and full system checks</li>
-        <li>Electrical fault finding — battery, alternator, wiring and sensors</li>
-        <li>Suspension repairs — shocks, struts, bushes and linkages</li>
-        <li>Cooling system repairs — radiators, hoses, thermostats and water pumps</li>
-        <li>Pre-purchase inspections — know exactly what you're buying</li>
-        <li>Log book servicing — warranty safe, all brands</li>
-        <li>Transmission servicing — automatic and manual</li>
-      </ul>
-      <p>We work on everything from small hatchbacks and family SUVs to larger 4WDs and light commercial vehicles. If you're not sure we can help, just call us — we're always happy to have a chat.</p>
+    <div class="services-two-col">
+      <div>
+        <img src="/assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="Mechanic repairing car at Noranda Service Centre">
+      </div>
+      <div class="content-body">
+        <p>From a warning light you can't explain to a full engine repair, our experienced team handles the lot. We use quality parts and provide clear, honest quotes before any work begins.</p>
+        <h3>Our Car Repair Capabilities</h3>
+        <ul>
+          <li>Engine diagnostics and repairs, all makes and models</li>
+          <li>Brake repairs, pads, rotors, callipers and full system checks</li>
+          <li>Electrical fault finding, battery, alternator, wiring and sensors</li>
+          <li>Suspension repairs, shocks, struts, bushes and linkages</li>
+          <li>Cooling system repairs, radiators, hoses, thermostats and water pumps</li>
+          <li>Pre-purchase inspections, know exactly what you're buying</li>
+          <li>Log book servicing, warranty safe, all brands</li>
+          <li>Transmission servicing, automatic and manual</li>
+        </ul>
+        <p>We work on everything from small hatchbacks and family SUVs to larger 4WDs and light commercial vehicles. If you're not sure we can help, just call us. We're always happy to have a chat.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -224,10 +251,10 @@ section.suppliers p,
   <div class="container">
     <h2 class="section-heading">Frequently Asked Questions</h2>
     <div class="faq-list">
-      <div class="faq-item"><button class="faq-question" aria-expanded="false">How do I know if my car needs a repair?</button><div class="faq-answer"><div class="faq-answer-inner">Warning lights, unusual noises, vibrations, reduced braking, or changes in handling are all signs your car needs attention. If in doubt, bring it in — we offer honest assessments and won't recommend work that isn't needed.</div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you provide a quote before starting work?</button><div class="faq-answer"><div class="faq-answer-inner">Always. We inspect your vehicle, explain what we find, and provide a clear quote before any repair begins. No surprises — just honest communication.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">How do I know if my car needs a repair?</button><div class="faq-answer"><div class="faq-answer-inner">Warning lights, unusual noises, vibrations, reduced braking, or changes in handling are all signs your car needs attention. If in doubt, bring it in we offer honest assessments and won't recommend work that isn't needed.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you provide a quote before starting work?</button><div class="faq-answer"><div class="faq-answer-inner">Always. We inspect your vehicle, explain what we find, and provide a clear quote before any repair begins. No surprises just honest communication.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">How long will my car repair take?</button><div class="faq-answer"><div class="faq-answer-inner">It depends on the repair. Minor jobs can be completed same day, while more complex repairs may take longer. We'll always give you an honest timeframe upfront and keep you updated.</div></div></div>
-      <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you cover all makes and models?</button><div class="faq-answer"><div class="faq-answer-inner">Yes — we service and repair Japanese, European, Korean, American and Australian vehicles. From small hatchbacks to SUVs, 4WDs and light commercial vehicles.</div></div></div>
+      <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you cover all makes and models?</button><div class="faq-answer"><div class="faq-answer-inner">Yes we service and repair Japanese, European, Korean, American and Australian vehicles. From small hatchbacks to SUVs, 4WDs and light commercial vehicles.</div></div></div>
     </div>
     <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
       <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
@@ -366,7 +393,7 @@ section.suppliers p,
               </div>
             </div>
             <div class="ns-note">
-              Preferred times are a request only &mdash; we&rsquo;ll confirm your actual slot by phone or email within 1 business day.
+              Preferred times are a request only   we&rsquo;ll confirm your actual slot by phone or email within 1 business day.
             </div>
 
             <button type="submit" class="ns-submit" id="m-ns-enfold-submit">Submit Booking Request &rarr;</button>
