@@ -65,12 +65,12 @@
   </div>
 </header>
 
-<div class="trust-strip">
+<div class="trust-strip" style="background:#ffffff;">
   <div class="trust-strip-inner">
-    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">20+</span><span class="trust-stat-label" style="color:#333333;">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">4.9&#9733;</span><span class="trust-stat-label" style="color:#333333;">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">All Makes</span><span class="trust-stat-label" style="color:#333333;">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">8</span><span class="trust-stat-label" style="color:#333333;">Fleet Companies</span></div>
   </div>
 </div>
 
@@ -86,12 +86,11 @@
       <div class="hero-left">
         <h1>VW Mechanic Noranda</h1>
         <h2>Volkswagen Service Specialists Noranda</h2>
-        <p>Reliable VW servicing without dealership pricing</p>
         <p>You didn't buy a Volkswagen because you wanted boring. You bought it because VWs are practical, well built, fun to drive, and engineered to feel better than your average car. So trusting your Volkswagen to a workshop that treats it like every other vehicle probably isn't your smartest move. From Golfs and Polos to Amaroks, Tiguans and performance GTI models, we know what it takes to keep your VW running properly.</p>
         <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 Trusted by Perth Drivers</a>
         <div class="hero-cta-row">
-          <a class="btn btn-lime" href="#form">Get a Free Quote</a>
-          <a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a>
+          <a class="btn btn-lime" href="tel:+61893448155">Call Now</a>
+          <a class="btn" href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:#ffffff;color:#111111;border:2px solid #111111;padding:12px 28px;border-radius:4px;font-weight:700;text-decoration:none;display:inline-block;">Get a Free Quote</a>
         </div>
       </div>
       <div class="hero-right">
@@ -117,7 +116,7 @@
         </ul>
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
           <a href="tel:+61893448155" style="background:#111111;color:#C8E63C;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;">Call 08 9344 8155</a>
-          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal===&apos;function&apos;)openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
+          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
         </div>
       </div>
       <div style="flex-shrink:0;text-align:center;">
@@ -134,75 +133,116 @@
 </section>
 <!-- End EOFY Promo Section -->
 
+<!-- WHY CHOOSE -->
 <section id="why-choose" class="section-pad">
   <div class="container">
-    <div style="display:flex;align-items:center;gap:48px;flex-wrap:wrap;">
-      <div style="flex:1;min-width:280px;">
+    <div class="why-choose-inner">
+      <div class="why-choose-content">
+        <div class="section-label"><span>Why Choose Us</span></div>
         <h2 class="section-heading">Why Noranda VW Drivers Choose Us</h2>
         <ul class="why-choose-list">
-          <li>Specialist VW knowledge from Polos and Golfs to Tiguans, Amaroks and performance GTI models</li>
-      <li>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance</li>
-      <li>Advanced diagnostics we read VW-specific fault codes, not just clear them</li>
-      <li>Quality parts OEM spec components for every repair</li>
-      <li>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
-      <li>30+ years serving Perth's north family-run workshop you can trust</li>
+          <li><span class="icon-badge">&#10003;</span>Specialist VW knowledge from Polos and Golfs to Tiguans, Amaroks and performance GTI models</li>
+          <li><span class="icon-badge">&#10003;</span>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance</li>
+          <li><span class="icon-badge">&#10003;</span>Advanced diagnostics we read VW-specific fault codes, not just clear them</li>
+          <li><span class="icon-badge">&#10003;</span>Quality parts OEM spec components for every repair</li>
+          <li><span class="icon-badge">&#10003;</span>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
+          <li><span class="icon-badge">&#10003;</span>30+ years serving Perth's north family-run workshop you can trust</li>
         </ul>
+        <div class="cta-pair">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
       </div>
-      <div style="flex:1;min-width:260px;max-width:480px;">
-        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?w=800&q=85" alt="Volkswagen serviced at Noranda Service Centre Mirrabooka"
-          style="width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+      <div class="why-choose-media">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="Volkswagen serviced at Noranda Service Centre Mirrabooka" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="section-pad">
+<!-- SERVICES -->
+<section id="services" class="section-pad" style="background:var(--mid);">
   <div class="container">
-    <h2 class="section-heading">Our VW Services</h2>
+    <div class="section-label" style="justify-content:center;"><span>Our Services</span></div>
+    <h2 class="section-heading" style="text-align:center;">Our VW Services</h2>
+    <p class="section-sub" style="text-align:center;">From routine logbook servicing to specialist diagnostics, our team handles it all under one roof.</p>
     <div class="services-grid">
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="VW logbook servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128203;</span>
         <h3>VW Logbook Servicing</h3>
         <p>Manufacturer scheduled servicing with premium oils, filters, inspections and service resets to maintain your warranty and performance.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-118-768x513.jpg" alt="VW engine repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#9881;</span>
         <h3>Engine Repairs</h3>
         <p>Oil leaks, timing issues, cooling problems, carbon build-up, turbo faults, and general engine repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-99-768x513.jpg" alt="VW DSG transmission servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128295;</span>
         <h3>DSG Transmission Servicing</h3>
         <p>Fluid changes, filter replacements, and full DSG servicing to keep your transmission shifting smoothly and reliably.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-56-2-768x513.jpg" alt="VW brake repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128269;</span>
         <h3>Brake Repairs</h3>
         <p>Brake pads, rotors, brake fluid servicing, ABS repairs, and complete brake system repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-186-1-768x513.jpg" alt="VW suspension and steering" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128664;</span>
         <h3>Suspension &amp; Steering Repairs</h3>
         <p>Shocks, steering repairs, control arms, bushes, and full suspension repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-192-768x513.jpg" alt="VW air conditioning repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#10052;</span>
         <h3>Air Conditioning Repairs</h3>
         <p>Regas services, compressor repairs, cooling inspections, and air conditioning repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="VW cooling system repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128274;</span>
         <h3>Cooling System Repairs</h3>
         <p>Water pumps, thermostats, radiators, coolant leaks, and overheating repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-51-1-optimized.jpg" alt="VW electrical repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128187;</span>
         <h3>Electrical Repairs</h3>
         <p>Battery issues, warning lights, sensor faults, and electrical repairs.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="VW preventative maintenance" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128270;</span>
         <h3>Preventative Maintenance</h3>
         <p>Because waiting until your VW starts making expensive noises is rarely a good financial decision.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- MODELS WE SERVICE -->
 <section id="models" class="models-section section-pad">
   <div class="container">
-    <h2 class="section-heading">VW Models We Service</h2>
+    <div class="section-label" style="justify-content:center;"><span>VW Models</span></div>
+    <h2 class="section-heading" style="text-align:center;">VW Models We Service</h2>
     <div class="models-grid">
       <div class="model-group">
         <h3>Hatchbacks &amp; Sedans</h3>
@@ -247,24 +287,43 @@
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="reviews" class="section-pad">
-  <div class="container">
-    <h2 class="section-heading">Real 5&#9733; Reviews from VW Drivers</h2>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues, which other service centres failed to rectify. The guys at Noranda Service Centre found the mechanical faults, rectified, and provided the best vehicle service experience. Can thoroughly recommend Noranda Service Centre for any vehicle requirement no matter what make or model."</p><p class="review-author">Don Dungey</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my GLC 220D. It was minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things needs to be addressed. Pickup and drop-off provided upon request. Overall good experience. Thanks again boys!!!"</p><p class="review-author">Harry Sojitra</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices. Highly recommend for all your automotive needs!"</p><p class="review-author">Haleluya Ghebremedhn</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p><p class="review-author">Liam Mashiah</p></div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="section-label" style="justify-content:center;"><span>Customer Reviews</span></div>
+    <h2 class="section-heading" style="text-align:center;">Real 5&#9733; Reviews from VW Drivers</h2>
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-carousel">
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues, which other service centres failed to rectify. The guys at Noranda Service Centre found the mechanical faults, rectified, and provided the best vehicle service experience. Can thoroughly recommend Noranda Service Centre for any vehicle requirement no matter what make or model."</p><p class="review-author">Don Dungey</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my GLC 220D. It was minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things needs to be addressed. Pickup and drop-off provided upon request. Overall good experience. Thanks again boys!!!"</p><p class="review-author">Harry Sojitra</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices. Highly recommend for all your automotive needs!"</p><p class="review-author">Haleluya Ghebremedhn</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p><p class="review-author">Liam Mashiah</p></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous review">&#8592;</button>
+        <button class="carousel-next" aria-label="Next review">&#8594;</button>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:1.05rem;font-weight:600;">Call Now and Get a Free Estimate &mdash; <a href="tel:+61893448155" style="color:var(--lime);">08 9344 8155</a></p>
+    <div class="cta-pair" style="justify-content:center;margin-top:1rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<!-- LOCATION -->
 <section id="location" class="section-pad">
   <div class="container">
+    <div class="section-label"><span>Find Us</span></div>
     <h2 class="section-heading">Find Us in Mirrabooka</h2>
     <div class="location-grid">
       <div class="map-wrapper"><iframe title="Noranda Service Centre location" src="https://maps.google.com/maps?q=2%2F3%20Cobbler%20Pl%2C%20Mirrabooka%20WA%206061%2C%20Australia&t=m&z=10&output=embed&iwloc=near" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -276,17 +335,27 @@
         <div class="location-row"><span>&#9733;</span><span><a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener">Read our Google Reviews</a></span></div>
       </div>
     </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
   </div>
 </section>
 
+<!-- FAQS -->
 <section id="faqs" class="section-pad">
   <div class="container">
-    <h2 class="section-heading">Frequently Asked Questions</h2>
+    <div class="section-label" style="justify-content:center;"><span>Common Questions</span></div>
+    <h2 class="section-heading" style="text-align:center;">Frequently Asked Questions</h2>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you service my Volkswagen without voiding my warranty?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We follow manufacturer servicing requirements and use quality parts and approved fluids to protect your warranty. All services are properly documented.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Is servicing with Noranda Service Centre cheaper than Volkswagen dealerships?</button><div class="faq-answer"><div class="faq-answer-inner">Usually, yes. You get experienced technicians and quality workmanship without paying dealership prices for the showroom and complimentary coffee.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you service newer Volkswagen models including GTI and Golf R?</button><div class="faq-answer"><div class="faq-answer-inner">Absolutely. We service the full VW range from everyday Polos and Golfs through to performance GTI and R models with the right equipment and fluids for each.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you diagnose VW warning lights and fault codes?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We use professional diagnostic equipment to read VW-specific fault codes accurately, so you get a real diagnosis instead of guesswork.</div></div></div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -326,7 +395,16 @@
 
 <script>
   document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var answer=btn.nextElementSibling;var isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){var href=this.getAttribute('href');if(href==="#form"&&document.getElementById('booking-modal'))return;var target=document.querySelector(href);if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}});});
+  // Carousel controls
+  var carousel = document.querySelector('.reviews-carousel');
+  if (carousel) {
+    document.querySelector('.carousel-prev') && document.querySelector('.carousel-prev').addEventListener('click', function(){
+      carousel.scrollBy({left: -340, behavior: 'smooth'});
+    });
+    document.querySelector('.carousel-next') && document.querySelector('.carousel-next').addEventListener('click', function(){
+      carousel.scrollBy({left: 340, behavior: 'smooth'});
+    });
+  }
 </script>
 <!-- Booking modal -->
 <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading"
@@ -337,65 +415,213 @@
       <button id="modal-close" aria-label="Close booking form"
         style="background:rgba(0,0,0,0.25);border:none;color:#fff;font-size:1.2rem;width:32px;height:32px;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;font-family:var(--font-main);">&#x2715;</button>
     </div>
-    <iframe src="https://forms.podium.com/noranda-service-centre-23-cobbler-pl-mirrabooka"
-      style="width:100%;min-height:680px;border:none;display:block;"
-      title="Book a Service Noranda Service Centre"
-      loading="lazy"></iframe>
+    <div style="padding:24px;">
+      <div class="ns-booking-form">
+
+        <form id="booking-form-modal">
+          <div class="ns-body">
+
+            <div class="ns-section">Your details</div>
+            <div class="ns-grid2">
+              <div class="ns-field">
+                <label for="m-ns-customer_name">Full name <span class="req">*</span></label>
+                <input type="text" name="customer_name" id="m-ns-customer_name" placeholder="e.g. Sarah Smith" required />
+              </div>
+              <div class="ns-field">
+                <label for="m-ns-customer_phone">Phone <span class="req">*</span></label>
+                <input type="tel" name="customer_phone" id="m-ns-customer_phone" placeholder="04xx xxx xxx" required />
+              </div>
+            </div>
+            <div class="ns-full">
+              <div class="ns-field">
+                <label for="m-ns-customer_email">Email <span class="req">*</span></label>
+                <input type="email" name="customer_email" id="m-ns-customer_email" placeholder="your@email.com" required />
+              </div>
+            </div>
+
+            <div class="ns-section">Vehicle details</div>
+            <div class="ns-full">
+              <div class="ns-field">
+                <label for="m-ns-registration">Registration <span class="req">*</span></label>
+                <input type="text" name="registration" id="m-ns-registration" placeholder="e.g. 1ABC123" required style="text-transform: uppercase;" />
+              </div>
+            </div>
+
+            <div class="ns-section">Service required</div>
+            <div class="ns-full" style="margin-bottom:12px">
+              <div class="ns-field">
+                <label for="m-ns-service_type">Service type <span class="req">*</span></label>
+                <select name="service_type" id="m-ns-service_type" required>
+                  <option value="" disabled selected>&#8212; Select a service &#8212;</option>
+                  <option>Logbook Service</option>
+                  <option>Roadworthy / Safety Inspection</option>
+                  <option>Brakes</option>
+                  <option>Steering &amp; Suspension</option>
+                  <option>Exhaust Repairs &amp; Replacement</option>
+                  <option>Air Conditioning</option>
+                  <option>Clutch &amp; Transmission</option>
+                  <option>Engine Repairs</option>
+                  <option>Cooling System</option>
+                  <option>Auto Electrical</option>
+                  <option>Tyres</option>
+                  <option>Windscreen</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="ns-full">
+              <div class="ns-field">
+                <label for="m-ns-notes">Notes / description</label>
+                <textarea name="notes" id="m-ns-notes" placeholder="Describe the issue or anything we should know..."></textarea>
+              </div>
+            </div>
+
+            <div class="ns-section">Preferred booking time</div>
+            <div class="ns-grid2">
+              <div class="ns-field">
+                <label for="m-ns-preferred_date">Preferred date <span class="req">*</span></label>
+                <input type="date" name="preferred_date" id="m-ns-preferred_date" required />
+                <p class="ns-hint" id="m-ns-hint-date"></p>
+              </div>
+              <div class="ns-field">
+                <label for="m-ns-preferred_time">Preferred time <span class="req">*</span></label>
+                <select name="preferred_time" id="m-ns-preferred_time" required>
+                  <option value="" disabled selected>&#8212; Select &#8212;</option>
+                  <option>Morning (8am to 12pm)</option>
+                  <option>Afternoon (12pm to 4:30pm)</option>
+                  <option>Either</option>
+                </select>
+              </div>
+            </div>
+            <div class="ns-note">
+              Preferred times are a request only we&rsquo;ll confirm your actual slot by phone or email within 1 business day.
+            </div>
+
+            <button type="submit" class="ns-submit" id="m-ns-enfold-submit">Submit Booking Request &rarr;</button>
+            <p class="ns-disclaimer">By submitting you agree to be contacted regarding your booking request.</p>
+            <p class="ns-error" id="m-ns-enfold-error">Something went wrong. Please call us on <strong>08 9344 8155</strong> or try again.</p>
+
+          </div>
+        </form>
+
+      </div>
+      <p style="color:#666;font-size:0.85rem;text-align:center;margin-top:16px;">We'll call you back within 2 business hours</p>
+    </div>
   </div>
 </div>
 <script src="../assets/js/modal.js"></script>
 <script>
 (function() {
-  var iframe  = document.querySelector('#booking-modal iframe');
-  var tracked = false;
+  var SUPABASE_URL      = 'https://prqbvbhuwfpdkkrkqizj.supabase.co';
+  var SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBycWJ2Ymh1d2ZwZGtrcmtxaXpqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzY5OTA1MzQsImV4cCI6MjA5MjU2NjUzNH0.Io5IHsyp23yThoyZD7Ccs4UygTtwx_0rIRTlnS3pYZQ';
+  var sb = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-  function fireConversions() {
-    if (tracked) return;
-    tracked = true;
+  var dateInput = document.getElementById('m-ns-preferred_date');
+  var hintDate  = document.getElementById('m-ns-hint-date');
 
-    // GA4 via GTM dataLayer
-    if (typeof dataLayer !== 'undefined') {
-      dataLayer.push({ event: 'generate_lead', form_type: 'podium' });
+  if (dateInput) dateInput.min = new Date().toISOString().split('T')[0];
+
+  function getLocalDateString() {
+    var now = new Date();
+    return now.getFullYear() + '-' +
+      String(now.getMonth() + 1).padStart(2, '0') + '-' +
+      String(now.getDate()).padStart(2, '0');
+  }
+
+  function updateHints() {
+    var dateVal = dateInput ? dateInput.value : '';
+    if (hintDate) hintDate.textContent = '';
+    if (!dateVal) return;
+    var parts    = dateVal.split('-');
+    var selected = new Date(parts[0], parts[1] - 1, parts[2]);
+    var dow      = selected.getDay();
+    if (dow === 0 || dow === 6) {
+      if (hintDate) hintDate.textContent = "We're closed on weekends we'll contact you to arrange a suitable date.";
+      return;
     }
-
-    // WhatConverts synthetic form so it captures visitor session/UTM data
-    try {
-      var wcForm = document.createElement('form');
-      wcForm.method = 'post';
-      wcForm.action = window.location.href;
-      var src = document.createElement('input');
-      src.type  = 'hidden';
-      src.name  = 'lead_source';
-      src.value = 'Podium Booking Form';
-      wcForm.appendChild(src);
-      document.body.appendChild(wcForm);
-      if (typeof window.wc_capture_form === 'function') {
-        window.wc_capture_form(wcForm);
-      }
-      document.body.removeChild(wcForm);
-    } catch (e) {
-      console.warn('[WhatConverts] capture failed:', e);
+    if (dateVal === getLocalDateString()) {
+      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability call us on 08 9344 8155 to confirm we can fit you in today.";
     }
   }
 
-  // postMessage: resize iframe height OR detect submission signal
-  window.addEventListener('message', function(e) {
-    if (e.origin !== 'https://forms.podium.com') return;
-    if (e.data && e.data.height && iframe) {
-      iframe.style.minHeight = e.data.height + 'px';
-      return;
+  if (dateInput) dateInput.addEventListener('change', updateHints);
+
+  var form      = document.getElementById('booking-form-modal');
+  var submitBtn = document.getElementById('m-ns-enfold-submit');
+  var errorMsg  = document.getElementById('m-ns-enfold-error');
+
+  var requiredFields = ['m-ns-customer_name', 'm-ns-customer_email', 'm-ns-customer_phone', 'm-ns-registration', 'm-ns-service_type', 'm-ns-preferred_date', 'm-ns-preferred_time'];
+
+  function validate() {
+    var valid = true;
+    requiredFields.forEach(function(id) {
+      var el    = document.getElementById(id);
+      var empty = !el.value.trim();
+      el.classList.toggle('invalid', empty);
+      if (empty) valid = false;
+    });
+    var emailEl = document.getElementById('m-ns-customer_email');
+    if (emailEl.value && !emailEl.value.includes('@')) {
+      emailEl.classList.add('invalid');
+      valid = false;
     }
-    // Any non-height message from Podium = likely a submission event
-    console.log('[Podium] postMessage:', JSON.stringify(e.data));
-    fireConversions();
+    return valid;
+  }
+
+  requiredFields.forEach(function(id) {
+    document.getElementById(id).addEventListener('input', function() {
+      this.classList.remove('invalid');
+    });
   });
 
-  // CTA click: fires when modal opens (intent signal)
-  document.querySelectorAll('a[href="#form"].btn-lime, a.header-cta[href="#form"]').forEach(function(el) {
-    el.addEventListener('click', function() {
-      if (typeof dataLayer !== 'undefined') {
-        dataLayer.push({ event: 'podium_form_open', form_type: 'podium' });
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    if (!validate()) return;
+
+    submitBtn.disabled    = true;
+    submitBtn.textContent = 'Sending...';
+    errorMsg.style.display = 'none';
+
+    var payload = {
+      customer_name:  document.getElementById('m-ns-customer_name').value.trim(),
+      customer_email: document.getElementById('m-ns-customer_email').value.trim(),
+      customer_phone: document.getElementById('m-ns-customer_phone').value.trim(),
+      registration:   document.getElementById('m-ns-registration').value.toUpperCase(),
+      service_type:   document.getElementById('m-ns-service_type').value,
+      preferred_date: document.getElementById('m-ns-preferred_date').value,
+      preferred_time: document.getElementById('m-ns-preferred_time').value,
+      notes:          document.getElementById('m-ns-notes').value.trim() || null,
+    };
+
+    sb.from('noranda_bookings').insert([payload]).then(function(result) {
+      if (result.error) {
+        console.error(result.error);
+        errorMsg.style.display = 'block';
+        submitBtn.disabled     = false;
+        submitBtn.textContent  = 'Submit Booking Request →';
+        return;
       }
+
+      try {
+        if (typeof window.wc_capture_form === 'function') {
+          window.wc_capture_form(form);
+        } else if (typeof window.__wc !== 'undefined' && typeof window.__wc.trackFormSubmission === 'function') {
+          window.__wc.trackFormSubmission(form);
+        }
+      } catch (wcErr) {
+        console.warn('WhatConverts capture failed:', wcErr);
+      }
+
+      if (typeof gtag === 'function') {
+        gtag('event', 'generate_lead', {
+          service_type: document.getElementById('m-ns-service_type').value
+        });
+      }
+
+      try {
+        window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
+      } catch (e) {}
+      setTimeout(function() { window.location.href = '../thank-you/'; }, 150);
     });
   });
 })();

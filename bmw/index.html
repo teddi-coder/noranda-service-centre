@@ -65,12 +65,12 @@
   </div>
 </header>
 
-<div class="trust-strip">
+<div class="trust-strip" style="background:#ffffff;">
   <div class="trust-strip-inner">
-    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">20+</span><span class="trust-stat-label" style="color:#333333;">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">4.9&#9733;</span><span class="trust-stat-label" style="color:#333333;">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">All Makes</span><span class="trust-stat-label" style="color:#333333;">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">8</span><span class="trust-stat-label" style="color:#333333;">Fleet Companies</span></div>
   </div>
 </div>
 
@@ -89,11 +89,11 @@
         <p>At Noranda Service Centre, we provide specialist BMW servicing, repairs, and maintenance for drivers across Noranda, Mirrabooka, Dianella, Malaga and surrounding Perth suburbs. From daily driven 1 Series vehicles to family X5s and performance M models, we know what it takes to keep your BMW performing exactly how it should.</p>
         <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 Trusted by Perth Drivers</a>
         <div class="hero-cta-row">
-          <a class="btn btn-lime" href="#form">Get a Free Quote</a>
-          <a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a>
+          <a class="btn btn-lime" href="tel:+61893448155">Call Now</a>
+          <a class="btn" href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:#ffffff;color:#111111;border:2px solid #111111;padding:12px 28px;border-radius:4px;font-weight:700;text-decoration:none;display:inline-block;">Get a Free Quote</a>
         </div>
       </div>
-            <div class="hero-right">
+      <div class="hero-right">
         <img src="../assets/images/Noranda-Service-Centre-Optimized-1024x681.jpg" alt="Noranda Service Centre team, BMW specialist mechanics in Mirrabooka" style="width:100%;height:auto;object-fit:cover;border-radius:10px;" loading="eager">
       </div>
     </div>
@@ -116,7 +116,7 @@
         </ul>
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
           <a href="tel:+61893448155" style="background:#111111;color:#C8E63C;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;">Call 08 9344 8155</a>
-          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal===&apos;function&apos;)openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
+          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
         </div>
       </div>
       <div style="flex-shrink:0;text-align:center;">
@@ -133,75 +133,116 @@
 </section>
 <!-- End EOFY Promo Section -->
 
+<!-- WHY CHOOSE -->
 <section id="why-choose" class="section-pad">
   <div class="container">
-    <div style="display:flex;align-items:center;gap:48px;flex-wrap:wrap;">
-      <div style="flex:1;min-width:280px;">
+    <div class="why-choose-inner">
+      <div class="why-choose-content">
+        <div class="section-label"><span>Why Choose Us</span></div>
         <h2 class="section-heading">Why Noranda BMW Drivers Choose Us</h2>
         <ul class="why-choose-list">
-          <li>Specialist BMW knowledge from 1 Series and X models to M performance vehicles</li>
-      <li>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance</li>
-      <li>Advanced diagnostics we read BMW fault codes, not just clear them</li>
-      <li>Quality parts OEM spec components for every repair</li>
-      <li>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
-      <li>30+ years serving Perth's north family-run workshop you can trust</li>
+          <li><span class="icon-badge">&#10003;</span>Specialist BMW knowledge from 1 Series and X models to M performance vehicles</li>
+          <li><span class="icon-badge">&#10003;</span>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance</li>
+          <li><span class="icon-badge">&#10003;</span>Advanced diagnostics we read BMW fault codes, not just clear them</li>
+          <li><span class="icon-badge">&#10003;</span>Quality parts OEM spec components for every repair</li>
+          <li><span class="icon-badge">&#10003;</span>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
+          <li><span class="icon-badge">&#10003;</span>30+ years serving Perth's north family-run workshop you can trust</li>
         </ul>
+        <div class="cta-pair">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
       </div>
-      <div style="flex:1;min-width:260px;max-width:480px;">
-        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?w=800&q=85" alt="BMW serviced at Noranda Service Centre Mirrabooka"
-          style="width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+      <div class="why-choose-media">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="BMW serviced at Noranda Service Centre Mirrabooka" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="section-pad">
+<!-- SERVICES -->
+<section id="services" class="section-pad" style="background:var(--mid);">
   <div class="container">
-    <h2 class="section-heading">Our BMW Services</h2>
+    <div class="section-label" style="justify-content:center;"><span>Our Services</span></div>
+    <h2 class="section-heading" style="text-align:center;">Our BMW Services</h2>
+    <p class="section-sub" style="text-align:center;">From routine logbook servicing to specialist diagnostics, our team handles it all under one roof.</p>
     <div class="services-grid">
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="BMW logbook servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128203;</span>
         <h3>BMW Logbook Servicing</h3>
         <p>Manufacturer scheduled servicing using premium oils, quality filters and correct service resets. Keep your warranty intact and your BMW performing at its best.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-118-768x513.jpg" alt="BMW engine repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#9881;</span>
         <h3>BMW Engine Repairs</h3>
         <p>Oil leaks, cooling issues, timing concerns, turbo problems, carbon buildup and engine repairs diagnosed properly and fixed right the first time.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-99-768x513.jpg" alt="BMW transmission servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128295;</span>
         <h3>BMW Transmission Servicing</h3>
         <p>Smooth shifting matters. We service automatic transmissions and driveline components to prevent expensive failures down the road.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-56-2-768x513.jpg" alt="BMW brake repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128269;</span>
         <h3>BMW Brake Repairs</h3>
         <p>Brake pads, rotors, fluid servicing, ABS repairs and complete braking system inspections. Safety you can feel.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-186-1-768x513.jpg" alt="BMW suspension and steering" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128664;</span>
         <h3>BMW Suspension &amp; Steering</h3>
         <p>Control arms, shocks, struts, bushings and steering repairs to keep your BMW handling exactly how it should.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-192-768x513.jpg" alt="BMW air conditioning" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#10052;</span>
         <h3>BMW Air Conditioning</h3>
         <p>Regas services, compressor repairs, cooling inspections and AC repairs to keep you comfortable year-round.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="BMW cooling system repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128274;</span>
         <h3>Cooling System Repairs</h3>
         <p>Water pumps, radiators, thermostats, coolant leaks and overheating repairs. BMW cooling issues get expensive fast don't wait.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-51-1-optimized.jpg" alt="BMW electrical repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128187;</span>
         <h3>Electrical Repairs</h3>
         <p>Battery issues, sensor faults, warning lights, charging problems and electrical repairs. We find the actual fault.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="BMW preventative maintenance" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128270;</span>
         <h3>Preventative Maintenance</h3>
         <p>Because waiting until your BMW starts making expensive noises is rarely a good financial decision.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- MODELS WE SERVICE -->
 <section id="models" class="models-section section-pad">
   <div class="container">
-    <h2 class="section-heading">BMW Models We Service</h2>
+    <div class="section-label" style="justify-content:center;"><span>BMW Models</span></div>
+    <h2 class="section-heading" style="text-align:center;">BMW Models We Service</h2>
     <div class="models-grid">
       <div class="model-group">
         <h3>Sedan &amp; Hatch</h3>
@@ -249,25 +290,43 @@
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="reviews" class="section-pad">
-  <div class="container">
-    <h2 class="section-heading">Real 5&#9733; Reviews from BMW Drivers</h2>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"The team at Noranda Service Centre worked above and beyond. My car runs better than it ever has. Thanks team."</p><p class="review-author">Marin Goodlich</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my vehicle minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things need addressing. Pickup and drop-off provided. Overall great experience. Absolute Bloody Legends!"</p><p class="review-author">Harry Sojitra</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices."</p><p class="review-author">Haleluya Ghebremedhn</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after."</p><p class="review-author">Liam Mashiah</p></div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="section-label" style="justify-content:center;"><span>Customer Reviews</span></div>
+    <h2 class="section-heading" style="text-align:center;">Real 5&#9733; Reviews from BMW Drivers</h2>
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-carousel">
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"The team at Noranda Service Centre worked above and beyond. My car runs better than it ever has. Thanks team."</p><p class="review-author">Marin Goodlich</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my vehicle minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things need addressing. Pickup and drop-off provided. Overall great experience. Absolute Bloody Legends!"</p><p class="review-author">Harry Sojitra</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices."</p><p class="review-author">Haleluya Ghebremedhn</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after."</p><p class="review-author">Liam Mashiah</p></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous review">&#8592;</button>
+        <button class="carousel-next" aria-label="Next review">&#8594;</button>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:1.05rem;font-weight:600;">Call Now and Get a Free Estimate &mdash; <a href="tel:+61893448155" style="color:var(--lime);">08 9344 8155</a></p>
+    <div class="cta-pair" style="justify-content:center;margin-top:1rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
+  </div>
+</section>
 
+<!-- LOCATION -->
 <section id="location" class="section-pad">
   <div class="container">
+    <div class="section-label"><span>Find Us</span></div>
     <h2 class="section-heading">Find Us in Mirrabooka</h2>
     <div class="location-grid">
       <div class="map-wrapper"><iframe title="Noranda Service Centre location" src="https://maps.google.com/maps?q=2%2F3%20Cobbler%20Pl%2C%20Mirrabooka%20WA%206061%2C%20Australia&t=m&z=10&output=embed&iwloc=near" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -279,17 +338,27 @@
         <div class="location-row"><span>&#9733;</span><span><a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener">Read our Google Reviews</a></span></div>
       </div>
     </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
   </div>
 </section>
 
+<!-- FAQS -->
 <section id="faqs" class="section-pad">
   <div class="container">
-    <h2 class="section-heading">Frequently Asked Questions</h2>
+    <div class="section-label" style="justify-content:center;"><span>Common Questions</span></div>
+    <h2 class="section-heading" style="text-align:center;">Frequently Asked Questions</h2>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do I need to go to a BMW dealership for servicing?</button><div class="faq-answer"><div class="faq-answer-inner">No. Under Australian Consumer Law, you can have your BMW serviced at any qualified workshop without voiding your warranty, as long as the service follows the manufacturer's schedule and uses quality parts. We do exactly that at a fraction of dealership prices.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">What BMW warning lights should I take seriously?</button><div class="faq-answer"><div class="faq-answer-inner">Engine, oil pressure, coolant temperature and brake warning lights should never be ignored. Even minor warning lights can indicate developing issues that become costly if left. Bring it in and we'll diagnose it properly.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">How often should my BMW be serviced?</button><div class="faq-answer"><div class="faq-answer-inner">BMW recommends servicing every 12 months or at the kilometre interval shown in your logbook whichever comes first. Following this schedule protects your warranty and keeps your BMW running as intended.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you work on BMW M and performance models?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We service and repair BMW M models including M135i, M240i, M340i, M440i and more. Our team understands the higher performance demands of M vehicles and services them accordingly.</div></div></div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -329,7 +398,16 @@
 
 <script>
   document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var answer=btn.nextElementSibling;var isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){var href=this.getAttribute('href');if(href==="#form"&&document.getElementById('booking-modal'))return;var target=document.querySelector(href);if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}});});
+  // Carousel controls
+  var carousel = document.querySelector('.reviews-carousel');
+  if (carousel) {
+    document.querySelector('.carousel-prev') && document.querySelector('.carousel-prev').addEventListener('click', function(){
+      carousel.scrollBy({left: -340, behavior: 'smooth'});
+    });
+    document.querySelector('.carousel-next') && document.querySelector('.carousel-next').addEventListener('click', function(){
+      carousel.scrollBy({left: 340, behavior: 'smooth'});
+    });
+  }
 </script>
 <!-- Booking modal -->
 <div id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-heading"
@@ -461,11 +539,11 @@
     var selected = new Date(parts[0], parts[1] - 1, parts[2]);
     var dow      = selected.getDay();
     if (dow === 0 || dow === 6) {
-      if (hintDate) hintDate.textContent = "We're closed on weekends \u2014 we'll contact you to arrange a suitable date.";
+      if (hintDate) hintDate.textContent = "We're closed on weekends — we'll contact you to arrange a suitable date.";
       return;
     }
     if (dateVal === getLocalDateString()) {
-      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability \u2014 call us on 08 9344 8155 to confirm we can fit you in today.";
+      if (hintDate) hintDate.textContent = "Same-day bookings are subject to availability — call us on 08 9344 8155 to confirm we can fit you in today.";
     }
   }
 
@@ -523,7 +601,7 @@
         console.error(result.error);
         errorMsg.style.display = 'block';
         submitBtn.disabled     = false;
-        submitBtn.textContent  = 'Submit Booking Request \u2192';
+        submitBtn.textContent  = 'Submit Booking Request →';
         return;
       }
 
@@ -543,7 +621,6 @@
         });
       }
 
-      // Notify parent page WhatConverts listener (iframe UTM attribution)
       try {
         window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
       } catch (e) {}

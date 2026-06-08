@@ -65,12 +65,12 @@
   </div>
 </header>
 
-<div class="trust-strip">
+<div class="trust-strip" style="background:#ffffff;">
   <div class="trust-strip-inner">
-    <div class="trust-stat"><span class="trust-stat-num">20+</span><span class="trust-stat-label">Years Experience</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">4.9&#9733;</span><span class="trust-stat-label">Google Rating</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">All Makes</span><span class="trust-stat-label">&amp; Models</span></div>
-    <div class="trust-stat"><span class="trust-stat-num">8</span><span class="trust-stat-label">Fleet Companies</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">20+</span><span class="trust-stat-label" style="color:#333333;">Years Experience</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">4.9&#9733;</span><span class="trust-stat-label" style="color:#333333;">Google Rating</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">All Makes</span><span class="trust-stat-label" style="color:#333333;">&amp; Models</span></div>
+    <div class="trust-stat"><span class="trust-stat-num" style="color:#111111;">8</span><span class="trust-stat-label" style="color:#333333;">Fleet Companies</span></div>
   </div>
 </div>
 
@@ -89,8 +89,8 @@
         <p>You didn't buy a Mercedes to drive something ordinary. You bought it for comfort, performance, and engineering that stands out. So trusting it to a workshop that treats it like every other car probably isn't your best move. From daily drivers to AMG models and family SUVs, we know what it takes to keep your Mercedes running properly.</p>
         <a class="hero-trust-badge" href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener"><span class="star">&#9733;</span> 5 Trusted by Perth Drivers</a>
         <div class="hero-cta-row">
-          <a class="btn btn-lime" href="#form">Get a Free Quote</a>
-          <a class="hero-phone-link" href="tel:+61893448155">Call 08 9344 8155</a>
+          <a class="btn btn-lime" href="tel:+61893448155">Call Now</a>
+          <a class="btn" href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:#ffffff;color:#111111;border:2px solid #111111;padding:12px 28px;border-radius:4px;font-weight:700;text-decoration:none;display:inline-block;">Get a Free Quote</a>
         </div>
       </div>
       <div class="hero-right">
@@ -116,7 +116,7 @@
         </ul>
         <div style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
           <a href="tel:+61893448155" style="background:#111111;color:#C8E63C;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;">Call 08 9344 8155</a>
-          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal===&apos;function&apos;)openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
+          <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();" style="background:transparent;color:#111111;font-family:'Oswald',sans-serif;font-weight:700;font-size:0.95rem;text-transform:uppercase;letter-spacing:0.08em;padding:14px 32px;border-radius:3px;text-decoration:none;white-space:nowrap;display:inline-block;border:2px solid #111111;">Book Online</a>
         </div>
       </div>
       <div style="flex-shrink:0;text-align:center;">
@@ -133,75 +133,116 @@
 </section>
 <!-- End EOFY Promo Section -->
 
+<!-- WHY CHOOSE -->
 <section id="why-choose" class="section-pad">
   <div class="container">
-    <div style="display:flex;align-items:center;gap:48px;flex-wrap:wrap;">
-      <div style="flex:1;min-width:280px;">
+    <div class="why-choose-inner">
+      <div class="why-choose-content">
+        <div class="section-label"><span>Why Choose Us</span></div>
         <h2 class="section-heading">Why Noranda Mercedes Drivers Choose Us</h2>
         <ul class="why-choose-list">
-          <li>Specialist Mercedes knowledge from A Class daily drivers to AMG performance models and EQ electric vehicles</li>
-      <li>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance and approved fluids</li>
-      <li>Advanced diagnostics professional Mercedes-specific fault code reading, not just clearing warning lights</li>
-      <li>Quality parts OEM spec components for every repair</li>
-      <li>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
-      <li>30+ years serving Perth's north family-run workshop you can trust</li>
+          <li><span class="icon-badge">&#10003;</span>Specialist Mercedes knowledge from A Class daily drivers to AMG performance models and EQ electric vehicles</li>
+          <li><span class="icon-badge">&#10003;</span>Manufacturer scheduled servicing protect your warranty with proper logbook maintenance and approved fluids</li>
+          <li><span class="icon-badge">&#10003;</span>Advanced diagnostics professional Mercedes-specific fault code reading, not just clearing warning lights</li>
+          <li><span class="icon-badge">&#10003;</span>Quality parts OEM spec components for every repair</li>
+          <li><span class="icon-badge">&#10003;</span>Honest, upfront quotes no surprise costs, no unnecessary work recommended</li>
+          <li><span class="icon-badge">&#10003;</span>30+ years serving Perth's north family-run workshop you can trust</li>
         </ul>
+        <div class="cta-pair">
+          <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+          <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+        </div>
       </div>
-      <div style="flex:1;min-width:260px;max-width:480px;">
-        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=800&q=85" alt="Mercedes serviced at Noranda Service Centre Mirrabooka"
-          style="width:100%;height:auto;border-radius:10px;display:block;box-shadow:0 8px 32px rgba(0,0,0,0.4);">
+      <div class="why-choose-media">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="Mercedes serviced at Noranda Service Centre Mirrabooka" loading="lazy">
       </div>
     </div>
   </div>
 </section>
 
-<section id="services" class="section-pad">
+<!-- SERVICES -->
+<section id="services" class="section-pad" style="background:var(--mid);">
   <div class="container">
-    <h2 class="section-heading">Our Mercedes Services</h2>
+    <div class="section-label" style="justify-content:center;"><span>Our Services</span></div>
+    <h2 class="section-heading" style="text-align:center;">Our Mercedes Services</h2>
+    <p class="section-sub" style="text-align:center;">From routine logbook servicing to specialist diagnostics, our team handles it all under one roof.</p>
     <div class="services-grid">
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="Mercedes logbook servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128203;</span>
         <h3>Mercedes Logbook Servicing</h3>
         <p>Manufacturer scheduled servicing, premium oils, filters, inspections, and service resets to maintain your warranty and performance.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-118-768x513.jpg" alt="Mercedes engine repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#9881;</span>
         <h3>Mercedes Engine Repairs</h3>
         <p>Oil leaks, timing issues, cooling problems, carbon build-up, turbo issues, and general engine repairs diagnosed properly and fixed right.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-99-768x513.jpg" alt="Mercedes transmission servicing" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128295;</span>
         <h3>Transmission Servicing</h3>
         <p>Mercedes automatic transmissions need regular servicing to maintain smooth performance and reliability. Don't wait until it starts slipping.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-56-2-768x513.jpg" alt="Mercedes brake repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128269;</span>
         <h3>Brake Repairs</h3>
         <p>Brake pads, rotors, brake fluid servicing, ABS repairs, and complete braking system repairs. Safety you can feel.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-186-1-768x513.jpg" alt="Mercedes suspension and steering" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128664;</span>
         <h3>Suspension &amp; Steering Repairs</h3>
         <p>Air suspension issues, shocks, steering repairs, control arms, and complete suspension repairs to keep your Mercedes riding as it should.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-192-768x513.jpg" alt="Mercedes air conditioning repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#10052;</span>
         <h3>Air Conditioning Repairs</h3>
         <p>Regas services, compressor repairs, cooling inspections, and air conditioning repairs to keep you comfortable year-round.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-Gallery-Images-Mechanic-Checking-of-Car-Engine-with-Supervisor-on-Checklist-768x513.jpg" alt="Mercedes cooling system repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128274;</span>
         <h3>Cooling System Repairs</h3>
         <p>Water pumps, radiators, thermostat issues, coolant leaks, and overheating repairs. Mercedes cooling system problems can get expensive fast.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-51-1-optimized.jpg" alt="Mercedes electrical repairs" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128187;</span>
         <h3>Electrical Repairs</h3>
         <p>Battery issues, sensor faults, warning lights, charging problems, and electrical repairs. We find the actual fault.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
       <div class="service-card">
+        <img src="../assets/images/Noranda-Service-Centre-4-2-optimized-768x513.jpg" alt="Mercedes preventative maintenance" style="width:100%;height:160px;object-fit:cover;border-radius:6px;margin-bottom:12px;" loading="lazy">
+        <span class="service-card-icon">&#128270;</span>
         <h3>Preventative Maintenance</h3>
         <p>Because waiting until your Mercedes starts making expensive noises is rarely a good financial decision.</p>
+        <a href="#booking-modal" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book now &rarr;</a>
       </div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- MODELS WE SERVICE -->
 <section id="models" class="models-section section-pad">
   <div class="container">
-    <h2 class="section-heading">Mercedes Models We Service</h2>
+    <div class="section-label" style="justify-content:center;"><span>Mercedes Models</span></div>
+    <h2 class="section-heading" style="text-align:center;">Mercedes Models We Service</h2>
     <div class="models-grid">
       <div class="model-group">
         <h3>A Class</h3>
@@ -271,25 +312,43 @@
         </ul>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="reviews" class="section-pad">
-  <div class="container">
-    <h2 class="section-heading">Real 5&#9733; Reviews from Mercedes Drivers</h2>
-    <div class="reviews-grid">
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues, which other service centres failed to rectify. The guys at Noranda Service Centre found the mechanical faults, rectified, and provided the best vehicle service experience. Can thoroughly recommend Noranda Service Centre for any vehicle requirement no matter what make or model."</p><p class="review-author">Don Dungey</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my GLC 220D. It was minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things needs to be addressed. Pickup and drop-off provided upon request. Overall good experience. Thanks again boys!!!"</p><p class="review-author">Harry Sojitra</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices. Highly recommend for all your automotive needs!"</p><p class="review-author">Haleluya Ghebremedhn</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
-      <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p><p class="review-author">Liam Mashiah</p></div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
 
+<!-- REVIEWS -->
+<section id="reviews" class="section-pad">
+  <div class="container">
+    <div class="section-label" style="justify-content:center;"><span>Customer Reviews</span></div>
+    <h2 class="section-heading" style="text-align:center;">Real 5&#9733; Reviews from Mercedes Drivers</h2>
+    <div class="reviews-carousel-wrapper">
+      <div class="reviews-carousel">
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Had the pleasure of my Mercedes and Astra serviced and repaired by Adrian and the mechanics at Noranda Service Centre. Both vehicles had issues, which other service centres failed to rectify. The guys at Noranda Service Centre found the mechanical faults, rectified, and provided the best vehicle service experience. Can thoroughly recommend Noranda Service Centre for any vehicle requirement no matter what make or model."</p><p class="review-author">Don Dungey</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Service was done on my GLC 220D. It was minor service so all necessary things changed and inspected. I liked their recorded video method to highlight what additional things needs to be addressed. Pickup and drop-off provided upon request. Overall good experience. Thanks again boys!!!"</p><p class="review-author">Harry Sojitra</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"I've had an exceptional experience with Noranda Auto Service Centre. Their team is professional, friendly, and expertly diagnoses issues. They keep you informed throughout the process and provide quality work at reasonable prices. Highly recommend for all your automotive needs!"</p><p class="review-author">Haleluya Ghebremedhn</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"These guys are the best! Fair prices, always completed in a timely manner. Just very professional and that's what I need to stay on the road."</p><p class="review-author">Ray Pritchard</p></div>
+        <div class="review-card"><div class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="review-text">"Adrian and his team from Noranda Service Centre were excellent! Friendly, honest, trustworthy and extremely knowledgeable, always going the extra mile to ensure their clients are looked after. I would highly recommend Noranda Service Centre for all your automotive needs!"</p><p class="review-author">Liam Mashiah</p></div>
+      </div>
+      <div class="carousel-controls">
+        <button class="carousel-prev" aria-label="Previous review">&#8592;</button>
+        <button class="carousel-next" aria-label="Next review">&#8594;</button>
+      </div>
+    </div>
+    <p style="text-align:center;margin-top:24px;font-size:1.05rem;font-weight:600;">Call Now and Get a Free Estimate &mdash; <a href="tel:+61893448155" style="color:var(--lime);">08 9344 8155</a></p>
+    <div class="cta-pair" style="justify-content:center;margin-top:1rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
+  </div>
+</section>
 
+<!-- LOCATION -->
 <section id="location" class="section-pad">
   <div class="container">
+    <div class="section-label"><span>Find Us</span></div>
     <h2 class="section-heading">Find Us in Mirrabooka</h2>
     <div class="location-grid">
       <div class="map-wrapper"><iframe title="Noranda Service Centre location" src="https://maps.google.com/maps?q=2%2F3%20Cobbler%20Pl%2C%20Mirrabooka%20WA%206061%2C%20Australia&t=m&z=10&output=embed&iwloc=near" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
@@ -301,17 +360,27 @@
         <div class="location-row"><span>&#9733;</span><span><a href="https://maps.app.goo.gl/JwD18biS235GNE3y7" target="_blank" rel="noopener">Read our Google Reviews</a></span></div>
       </div>
     </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
+    </div>
   </div>
 </section>
 
+<!-- FAQS -->
 <section id="faqs" class="section-pad">
   <div class="container">
-    <h2 class="section-heading">Frequently Asked Questions</h2>
+    <div class="section-label" style="justify-content:center;"><span>Common Questions</span></div>
+    <h2 class="section-heading" style="text-align:center;">Frequently Asked Questions</h2>
     <div class="faq-list">
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you service my Mercedes without voiding my warranty?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We follow manufacturer servicing requirements and use quality parts and approved fluids to help protect your manufacturer's warranty. We document all services properly.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Is servicing with Noranda Service Centre cheaper than Mercedes dealerships?</button><div class="faq-answer"><div class="faq-answer-inner">Usually, yes. You'll still get experienced technicians and quality workmanship without paying dealership prices for the waiting room decor.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Do you specialise in AMG models?</button><div class="faq-answer"><div class="faq-answer-inner">We service AMG models across the range, including high-performance variants. Our team understands the additional demands these vehicles place on components and services them accordingly.</div></div></div>
       <div class="faq-item"><button class="faq-question" aria-expanded="false">Can you diagnose Mercedes warning lights and fault codes?</button><div class="faq-answer"><div class="faq-answer-inner">Yes. We use professional diagnostic equipment to read Mercedes-specific fault codes and warning lights, so we can give you an accurate diagnosis rather than guessing.</div></div></div>
+    </div>
+    <div class="cta-pair" style="justify-content:center;margin-top:2rem;">
+      <a href="tel:+61893448155" class="btn btn-lime">Call Now</a>
+      <a href="#booking-modal" class="btn btn-dark" onclick="event.preventDefault();if(typeof openBookingModal==='function')openBookingModal();">Book Now</a>
     </div>
   </div>
 </section>
@@ -351,7 +420,16 @@
 
 <script>
   document.querySelectorAll('.faq-question').forEach(function(btn){btn.addEventListener('click',function(){var answer=btn.nextElementSibling;var isOpen=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',!isOpen);answer.style.maxHeight=isOpen?'0':answer.scrollHeight+'px';});});
-  document.querySelectorAll('a[href^="#"]').forEach(function(anchor){anchor.addEventListener('click',function(e){var href=this.getAttribute('href');if(href==="#form"&&document.getElementById('booking-modal'))return;var target=document.querySelector(href);if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth',block:'start'});}});});
+  // Carousel controls
+  var carousel = document.querySelector('.reviews-carousel');
+  if (carousel) {
+    document.querySelector('.carousel-prev') && document.querySelector('.carousel-prev').addEventListener('click', function(){
+      carousel.scrollBy({left: -340, behavior: 'smooth'});
+    });
+    document.querySelector('.carousel-next') && document.querySelector('.carousel-next').addEventListener('click', function(){
+      carousel.scrollBy({left: 340, behavior: 'smooth'});
+    });
+  }
 </script>
 
 <!-- Booking modal -->
@@ -568,7 +646,6 @@
         });
       }
 
-      // Notify parent page WhatConverts listener (iframe UTM attribution)
       try {
         window.parent.postMessage({ type: 'noranda_booking_submitted', data: payload }, '*');
       } catch (e) {}
