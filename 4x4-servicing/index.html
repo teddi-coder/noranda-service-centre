@@ -30,7 +30,50 @@
     .eofy-price-save { font-size:1rem; font-weight:700; color:#fff; background:#e63; padding:4px 10px; border-radius:4px; }
     .eofy-call-note { background:#fff8e1; border-left:4px solid var(--lime); padding:10px 16px; border-radius:0 6px 6px 0; font-size:0.95rem; margin:16px 0; color:#333; }
     .eofy-expires { font-size:0.9rem; color:#e63; font-weight:600; margin-top:8px; }
-  </style>
+  /* 3-image banner */
+.img-banner-3 { width: 100%; overflow: hidden; }
+.img-banner-3__track { display: flex; }
+.img-banner-3__item { flex: 0 0 33.333%; width: 33.333%; }
+.img-banner-3__item img { width: 100%; height: 280px; object-fit: cover; display: block; }
+@media (max-width: 767px) {
+  .img-banner-3__track {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .img-banner-3__track::-webkit-scrollbar { display: none; }
+  .img-banner-3__item { flex: 0 0 100%; width: 100%; scroll-snap-align: start; }
+  .img-banner-3__item img { height: 220px; }
+}
+/* Part C: Single-column section centering */
+/* Target sections that are single-column (not two-col grids) */
+#reviews .section-heading,
+#reviews h2,
+#how-it-works .section-heading,
+#how-it-works h2,
+#how-it-works .section-label,
+#models .section-heading,
+#models h2,
+#models .section-label,
+#services .section-heading,
+#services h2,
+#services .section-label,
+#services .section-sub,
+#faqs .section-heading,
+#faqs h2,
+#faqs .section-label,
+section.suppliers p,
+.final-cta-section h2,
+#main-content .section-heading,
+#main-content h2,
+#main-content h3 { text-align: center; }
+
+.services-cta.cta-pair,
+#how-it-works .how-cta,
+#models .cta-pair,
+.final-cta-section .cta-pair { justify-content: center; }
+</style>
 </head>
 <body>
 
@@ -102,10 +145,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<div style="width:100%; max-height:420px; overflow:hidden; max-width:100%;">
-  <img src="/assets/images/Noranda-Service-Centre-186-1.jpg"
-       alt="Noranda Service Centre workshop" style="max-width:100%; width:100%; height:auto; max-height:420px; object-fit:cover; display:block;" loading="eager">
-</div>
+<!-- 3-image banner -->
+<section class="img-banner-3">
+  <div class="img-banner-3__track">
+    <div class="img-banner-3__item">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Mechanic-Looking-at-Interior-Vehicle-Parts-using-Mechanic-Gadget.jpg" alt="Mechanic inspecting vehicle interior" loading="lazy">
+    </div>
+    <div class="img-banner-3__item">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Services-Car-Auto-Inspections-Vehicle-Inspection-using-Torch-in-Car-Belly.jpg" alt="Vehicle inspection with torch" loading="lazy">
+    </div>
+    <div class="img-banner-3__item">
+      <img src="https://mechanicsnoranda.com.au/wp-content/uploads/2020/10/Noranda-Service-Centre-Gallery-Images-Car-Checkup-Using-Gadget-on-Black-Audi-Car.jpg" alt="Car diagnostic on Audi" loading="lazy">
+    </div>
+  </div>
+</section>
 
 <section id="services" class="section-pad">
   <div class="container">
